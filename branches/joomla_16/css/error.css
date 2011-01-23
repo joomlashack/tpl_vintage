@@ -1,0 +1,49 @@
+/* @group Pulldown Pane */
+
+#cPanel2 {
+	background: url(../images/cork.png) repeat-y center bottom;
+}
+
+#cPanel2 .top {
+	height:47px;
+	width: 924px;
+	margin:0 auto;
+	background: url(../images/cork_top.png) no-repeat center top;
+}
+#cPanel2 .bottom {
+	height:49px;
+	width: 924px;
+	margin:0 auto;
+	background: url(../images/cork_bottom.png) no-repeat center top;
+}
+
+#cPanel2 .inside {
+	padding: 0px 50px;
+	position: relative;
+	top: 0px;
+	overflow: hidden;
+	margin: 0px auto;
+
+}
+
+table#panel {
+	margin: 0 auto;
+	width: 760px;
+}
+
+table#panel td.clm-a {
+	vertical-align: top;
+	padding: 5px;
+}
+
+table#panel td.clm-a h3 {
+	color: red;
+	padding: 0px;
+	margin: 10px 0px;
+}
+#techinfo {
+	color: #da1218;
+	font: 11px Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* @end */

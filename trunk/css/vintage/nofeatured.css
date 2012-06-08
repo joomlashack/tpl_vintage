@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+div#featured-wrapper {
+	height: auto;
+	position: relative;
+	width: 960px;
+	overflow:visible;
+	margin: 10px auto;
+}
+
+div#featured-wrapper > div.featured1-wrapper {
+	position: relative;
+	top: auto;
+	height: auto !important;
+	z-index: auto;
+}

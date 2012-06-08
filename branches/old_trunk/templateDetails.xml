@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+	<name>js_vintage_001</name>
+	<version>1.1</version>
+	<creationDate>12/20/07</creationDate>
+	<author>Casey Lee</author>
+	<copyright>Joomlashack LLC</copyright>
+    <authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+    <license>Commercial - Single Domain License</license>
+	<description>Thank you for purchasing and installing the Vintage template from Joomlashack!</description>
+<files>
+	<filename>index.php</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>params.ini</filename>
+	<filename>template_thumbnail.png</filename>
+	<folder>css/</folder>
+	<folder>images/</folder>
+	<folder>js/</folder>
+	<folder>html/</folder>
+</files>
+<positions>
+	<position>menu</position>
+	<position>newsflash</position>
+	<position>left</position>
+	<position>right</position>
+	<position>banner</position>
+	<position>inset</position>
+	<position>user1</position>
+	<position>user2</position>
+	<position>user3</position>
+	<position>user4</position>
+	<position>user5</position>
+	<position>user6</position>
+	<position>user7</position>
+	<position>user8</position>
+	<position>user9</position>
+	<position>footer</position>
+</positions>
+<params>
+	<param name="headerstyle" type="list" default="text" label="Header Style" description="Header text render mehod">
+		<option value="graphic">Graphic</option>
+		<option value="text">Text</option>
+	</param>
+	<param name="headline" type="text" default="Vintage" label="Headline Text" size="30" description="Headline Text"></param>
+	<param name="slogan" type="text" default="Something Different for Joomla!" label="Slogan Text" size="30" description="Slogan Text"></param>
+	<param name="cPanel" type="radio" default="0" label="Enable Bulletin Dropdown" description="Select to enable the bulletin dropdown">
+	<option value="1">Yes</option>
+	<option value="0">No</option>
+	</param>
+	<param name="cPanelheight" type="text" default="100" label="Bulletin Height" description="Height of bulletin module area"></param>
+	<param name="cPanelSpeed" type="text" default="200" label="Bulletin Speed" description="Speed of bulletin module drop-down panel"></param>
+	<param name="cPanelText" type="text" default="Bulletin" label="Bulletin Tab Text" description="Text to be displayed in bulletin tab"></param>
+	<param name="right_column" type="text" default="200px" label="Right Column Width" description="Width (in px) of right column. Left + Right should not exceed 475px"></param>
+	<param name="user456suffix" type="list" default="S5" label="User 4,5,6 Style" description="Sets the style of the User 4,5,6 module container">
+	<option value="S1">S1</option>
+	<option value="S2">S2</option>
+	<option value="S3">S3</option>
+	<option value="S4">S4</option>
+	<option value="S5">S5</option>
+	</param>
+	<param name="user789suffix" type="list" default="S5" label="User 7,8,9 Style" description="Sets the style of the User 7,8,9 module container">
+	<option value="S1">S1</option>
+	<option value="S2">S2</option>
+	<option value="S3">S3</option>
+	<option value="S4">S4</option>
+	<option value="S5">S5</option>
+	</param>
+</params>
+</install>

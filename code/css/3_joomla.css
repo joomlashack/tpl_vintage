@@ -35,9 +35,8 @@ margin:20px 0 0 0;
 #contact-slider br{
 display:none;
 }
-#contact-slider .panel{
-padding:10px;
-margin:0 0 10px 0;
+#contact-slider .panel .content{
+	padding:10px;
 }
 #contact-slider .panel h3{
 font-size:18px;

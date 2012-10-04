@@ -2,7 +2,7 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
 	<name>js_vintage</name>
-	<creationDate>September 2012</creationDate>
+	<creationDate>October 2012</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
 	<authorUrl>http://www.joomlashack.com</authorUrl>
@@ -76,7 +76,6 @@
 	      <option value="1">YES</option>
 	    </field>
 	     <field name="text-button" type="text" default="Featured" label="Label for Featured module button" description="Write in the text for opening the Featured module" />
-      	
       </fieldset>
     </fields>
   </config>

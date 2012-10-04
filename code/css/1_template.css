@@ -2008,3 +2008,6 @@ fieldset.filters div.alert{
 	padding: 0;
 	border:0 none;
 }
+.category thead tr th {
+	color:white;
+}

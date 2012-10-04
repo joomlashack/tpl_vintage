@@ -595,13 +595,7 @@ body div a.joomlashack {
 	margin-bottom: 10px;
 }
 
-.items-more {
-    border-radius: 5px;
-    clear: both;
-    display: block;
-    margin: 20px 0;
-    padding: 10px;
-}
+
 .module a.readmore,
 .module_ms1 a.readmore,
 .module_ms2 a.readmore,
@@ -2004,4 +1998,13 @@ body.mceContentBody {
     background-image: url("../images/Brown/bg-repeat.png");
     background-position: top -10px;
     background-repeat: repeat-y;
+}
+div.module.no_title .pad-title, 
+div.module_ms1.no_title .pad-title, 
+div.module_ms2.no_title .pad-title{
+	border:0 none;
+}
+fieldset.filters div.alert{
+	padding: 0;
+	border:0 none;
 }

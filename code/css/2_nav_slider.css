@@ -180,10 +180,8 @@ padding:3px 3px 3px 90px;
 	background-repeat:no-repeat;
 	background-position: bottom left;
 }
-#sidebar1 li.active > a,
-#sidebar2 li.active > a,
-#sidebar1 li.active > span,
-#sidebar2 li.active > span{
+#sidebar1 li.active,
+#sidebar2 li.active {
 	box-shadow: 0 0 3px #666;
 	margin: 0 0 3px 0;
 }

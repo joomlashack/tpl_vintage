@@ -35,7 +35,7 @@ div.module_ms4 h3 {
 }
 #menu ul li a,
 #menu ul li span{
-    border-left: 1px solid #534327;   
+    border-left: 1px solid #534327;
 }
 .category thead tr th {
   background-image: url(../images/Brown/sectiontable_header.png);
@@ -94,11 +94,11 @@ p {
 
 a {
 	color: #660000;
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 a:hover {
 	color: #660000;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 /* EXTRA STYLES */
@@ -321,7 +321,7 @@ table#panel td.clm-c {
 /* @end */
 
 /* @group Modules */
- 
+
  /* Header Module */
 #headermod {
 	float: right;
@@ -463,7 +463,7 @@ ul.latestnewsS1 li, ul.mostreadS1 li,
 ul.latestnewsS2 li, ul.mostreadS2 li,
 ul.latestnewsS3 li, ul.mostreadS3 li,
 ul.latestnewsS4 li, ul.mostreadS4 li,
-ul.latestnewsS5 li, ul.mostreadS5 li { 
+ul.latestnewsS5 li, ul.mostreadS5 li {
 	padding: 0px 0px 0px 10px;
 	margin: 0px;
 	background: url(../images/bullet.gif) no-repeat 0px 6px;
@@ -492,7 +492,7 @@ div#banner {
 }
 
 .moduletable-banner {
-	text-align: center;	
+	text-align: center;
 	margin: 5px auto;
 }
 
@@ -604,7 +604,7 @@ tr.sectiontableentry1 td,
 td.sectiontableentry1 {
 background: #f6f4e5;
 padding: 4px;
-border-bottom: 1px solid #f0f0e1;	
+border-bottom: 1px solid #f0f0e1;
 }
 tr.sectiontableentry2 td,
 td.sectiontableentry2 {
@@ -667,7 +667,7 @@ a.contentpagetitle {
 	color: #470705;
 }
 a.contentpagetitle:hover {
-	color: #000;	
+	color: #000;
 	text-decoration: none;
 }
 td.contentheading {
@@ -850,4 +850,10 @@ div.module_ms2.no_title .pad4{
 	background-repeat: no-repeat;
 	height: 7px;
 	padding: 0 0 0 7px;
+}
+
+#sidebar1 .menu > li > span,
+#sidebar2 .menu > li > span
+{
+	color: #660000;
 }

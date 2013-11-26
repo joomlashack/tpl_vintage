@@ -851,7 +851,7 @@ height:20px !important;
 /*************************** Breadcrums *****************************************************/
 #pathway{
 	font-size:10px;
-	margin:0 0 20px 0;
+	margin:0;
 }
 #pathway-inner a{
 	color:#999999;

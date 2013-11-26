@@ -2134,7 +2134,8 @@ div.module .pad3:after
     clear: both;
 }
 
-.weblinks{
+.weblinks, .tagspopular ul , .tagssimilar ul
+{
 	margin-top: 0;
 	margin-bottom: 0;
 }

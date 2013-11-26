@@ -2017,3 +2017,124 @@ img{max-width: 100%}
 {
 	max-width: 50%;
 }
+p + dl.article-info{
+	border: 0;
+}
+dl.article-info
+{
+	margin-bottom: 10px;
+}
+.contact-address dd,
+.contact-address dt
+{
+	padding: 2px;
+	border: 0;
+	height: 23px;
+
+}
+.breadcrumb li
+{
+	color: #999999;
+}
+.breadcrumb li span
+{
+	color: #999999;
+	font-style: italic;
+	text-transform: lowercase;
+	font-weight: 700;
+}
+.breadcrumb li span.divider.icon-location{
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+/*style*/
+
+.cat-list{
+border-top:1px solid #CCC;
+border-left:1px solid #CCC;
+border-right:1px solid #CCC;
+}
+.cat-list:hover{
+background:#EEE;
+}
+.cat-list .list-title,
+.cat-list .list-date,
+.cat-list .list-author,
+.cat-list .list-hits{
+border:1px solid #CCC;
+}
+.cat-list-row0{
+border-top:1px solid #CCC;
+border-left:1px solid #CCC;
+border-right:1px solid #CCC;
+}
+.cat-list-row0:hover{
+background:#D7D2B7;
+}
+.cat-list-row0 .list-title,
+.cat-list-row0 .list-date,
+.cat-list-row0 .list-author{
+border:1px solid #CCC;
+}
+.cat-list-row1{
+border-top:1px solid #CCC;
+border-left:1px solid #CCC;
+border-right:1px solid #CCC;
+}
+.cat-list-row1:hover{
+background:#D7D2B7;
+}
+.cat-list-row1 .list-title,
+.cat-list-row1 .list-date,
+.cat-list-row1 .list-author{
+border:1px solid #CCC;
+}
+
+
+/*-------------------------*/
+
+.cat-list-row1 .list-title, .cat-list-row0 .list-title
+{
+	border: 0;
+	padding: 0;
+}
+
+#sidebar1 #login-form input, #mod-finder-searchform input,
+#sidebar2 #login-form input, #mod-finder-searchform input
+{
+	max-width: 55%;
+}
+
+#sidebar1 #login-form, #sidebar1 #mod-finder-searchform,
+#sidebar2 #login-form, #sidebar2 #mod-finder-searchform
+{
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+#sidebar1 #mod-finder-searchform label,
+#sidebar2 #mod-finder-searchform label
+{
+	line-height: 28px;
+	margin-left: 10px;
+	min-height: 28px;
+}
+
+
+div.module .pad3:before,
+div.module .pad3:after
+{
+    content: " ";
+    display: table;
+}
+div.module .pad3:after
+{
+    clear: both;
+}
+
+.weblinks{
+	margin-top: 0;
+	margin-bottom: 0;
+}

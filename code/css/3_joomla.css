@@ -388,9 +388,9 @@ margin:0;
 padding:0;
 list-style:none;
 }
-.feed ul.newsfeed{
-margin:20px 0 0 0;
-padding:20px 0 0 0;
+.feed ul.newsfeed
+{
+	margin:20px 0 0 0;
 }
 .feed ul.newsfeed li.newsfeed-item{
 margin-bottom:20px;
@@ -469,9 +469,8 @@ padding:0;
 list-style:none;
 }
 ul.categories-module li{
-display:block;
-padding:10px;
-margin:0 0 10px 0;
+	display:block;
+	margin:0 0 10px 0;
 }
 /* ***************************************************************************************************** */
 /* ARTICLES CATEGORY MODULE */

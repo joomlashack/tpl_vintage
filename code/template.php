@@ -6,23 +6,6 @@
 
 // WrightTemplate class, for special
 defined('_JEXEC') or die('Restricted access');
-
-if (version_compare(JVERSION, '3.0', 'lt')) {
-	JHTML::_('behavior.mootools');
-}
-else {
-	JHtmlBehavior::framework($extras=true);
-}
-
-// WrightTemplate class, for special settings on Wright
-class WrightTemplate extends WrightTemplateBase {
-	public $suffixes = true;
-}
-
-$menutype = $this -> params -> get('menutype', 'accordion-open');
-$disable_featured = ($this -> params -> get('disable-featured', '0') != '0' ? true : false);
-$text = $this -> params -> get('text-button', 'Featured');
-
 ?>
 <doctype>
 	<html>

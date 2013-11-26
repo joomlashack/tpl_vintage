@@ -8,11 +8,11 @@
 	<authorUrl>http://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
-	<version>3.0.1</version>
+	<version>3.0.2</version>
     <description>
 			<![CDATA[
 				<p>Vintage template by <a href="http://www.joomlashack.com">Joomlashack</a></p>
-			]]> 	
+			]]>
     </description>
 	<files>
 		<filename>component.php</filename>
@@ -28,7 +28,7 @@
 		<folder>images</folder>
 		<folder>js</folder>
 		<folder>wright</folder>
-	</files> 
+	</files>
 	<positions>
 		<position>sidebar1</position>
 		<position>sidebar2</position>

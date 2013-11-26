@@ -2122,6 +2122,10 @@ border:1px solid #CCC;
 	min-height: 28px;
 }
 
+div.module .pad3
+{
+	padding-bottom: 5px;
+}
 
 div.module .pad3:before,
 div.module .pad3:after
@@ -2138,4 +2142,13 @@ div.module .pad3:after
 {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.feed h2{
+	font-size: 18px;
+	font-weight: 400;
+}
+.feed ul.newsfeed ul
+{
+	margin-left: 10px;
 }

@@ -1740,6 +1740,10 @@ ul.article-info li{
 {
 	margin-top: 0;
 }
+dl#tabs dt h3, dl.tabs dt h3
+{
+	margin-top: 0;
+}
 dl#tabs dt, dl.tabs dt{
 	background-color: #eee;
 	box-shadow: none;
@@ -1758,4 +1762,13 @@ dl#tabs dt:hover, dl#tabs dt.open, dl.tabs dt:hover, dl.tabs dt.open
 .panel h3.pane-toggler-down a
 {
 	margin-left: 10px;
+}
+#tabs + div.current, .tabs + div.current
+{
+	box-shadow: none;
+}
+
+li a[class^="icon-"], li a[class*=" icon-"]
+{
+	text-align: left;
 }

@@ -61,7 +61,7 @@ $text = $this -> params -> get('text-button', 'Featured');
 									</div>
 								</div>
 							</div>
-							
+
 							<?php    endif;?>
 							</div>
 						</div>
@@ -79,7 +79,7 @@ $text = $this -> params -> get('text-button', 'Featured');
 				<?php if ($this->countModules('featured')) :
 				?>
 				<div class="featured-wrapper container_12" id="featured-wrapper">
-					
+
 					<div class="featured1-wrapper ">
 						<div class="pad-fe">
 							<div class="pad2-fe"></div>
@@ -87,18 +87,18 @@ $text = $this -> params -> get('text-button', 'Featured');
 						<div >
 							<div class="featured2-wrapper ">
 						<w:module type="grid" name="featured" chrome="wrightflexgridimages" />
-							
+
 						<div class="clr"></div>
 						</div>
 
-							
+
 						</div>
 						<div class="pad3-fe">
 							<div class="pad4-fe"></div>
 						</div>
 					<div class="clear"></div>
 					</div>
-					
+
 				</div>
 				<?php    endif;?>
 

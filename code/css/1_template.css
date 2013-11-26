@@ -636,11 +636,11 @@ input#mod-search-searchword,
 input.mod-search-searchword{
 	background-color:#fff;
 	border-radius:5px;
-	border:0;
-    padding: 5px 5px 5px 15px;
+	border:1px solid #eee;
     color: #000;
-    width:209px;
     font-family: georgia;
+    padding: 5px 5px 5px 15px;
+    width:209px;
 }
 input#mod-search-searchword:focus,
 input.mod-search-searchword:focus{
@@ -1232,8 +1232,8 @@ div.module .pad-title,
 div.module_ms1 .pad-title,
 div.module_ms2 .pad-title{
 	background-color:#EBE8D4;
-	margin: 0 -7px;
 	border-bottom: 1px solid #D0CFC5;
+	margin: 0 -7px 10px;
 }
 div.pad-title h3 span{
 	display: block;
@@ -2011,3 +2011,9 @@ fieldset.filters div.alert{
 	color:white;
 }
 img{max-width: 100%}
+
+#sidebar1 input#mod-search-searchword, #sidebar1 input.mod-search-searchword,
+#sidebar2 input#mod-search-searchword, #sidebar2 input.mod-search-searchword
+{
+	max-width: 50%;
+}

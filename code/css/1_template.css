@@ -1,6 +1,5 @@
 @charset "utf-8";
 /* CSS Document Copyright © */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 /* ***************************************************************************************************** */
 body {
 	background: #472415 url(../images/Red/page_bg.png) repeat-x center top;
@@ -37,7 +36,7 @@ a:focus
 	outline: none;
 }
 #main{
-	margin-bottom: 10px;   
+	margin-bottom: 10px;
 }
 a{
 	text-decoration: none;
@@ -57,7 +56,7 @@ a{
     white-space: normal;
 }
 #wrapp-top{
-	height: 100%; 
+	height: 100%;
 }
 .cont-style{
 	margin-bottom:10px;
@@ -75,7 +74,7 @@ div#top {
 }
 
 div.module,
-div.module_ms1, 
+div.module_ms1,
 div.module_ms2 {
     margin-bottom: 20px;
 }
@@ -83,17 +82,17 @@ div.module_ms3,
 div.module_ms4{
 	margin-bottom: 25px;
 }
-.module_ms1 .pad3, 
-.module_ms3 .pad3, 
+.module_ms1 .pad3,
+.module_ms3 .pad3,
 .module .pad3{
 	overflow: hidden;
 }
 
-#grid-top2, 
-#grid-top, 
-#grid-bottom, 
-#grid-bottom2, 
-#main, 
+#grid-top2,
+#grid-top,
+#grid-bottom,
+#grid-bottom2,
+#main,
 .footer-wrapper {
     clear: both;
 }
@@ -154,7 +153,7 @@ div.module_ms4{
 	width: 960px;
 	margin:0 auto;
 	position: relative;
-	
+
 }
 .footer-wrapper .moduletable{
 	overflow: hidden;
@@ -319,7 +318,7 @@ padding:10px 0;
 .clr {
 clear:both;
 }
-ul, 
+ul,
 ol{
 margin-top:20px;
 margin-bottom:20px;
@@ -340,7 +339,7 @@ margin-bottom:20px;
     padding-bottom: 10px;
 }
 /************ Footer menu *****************/
-.footer-wrapper ul li 
+.footer-wrapper ul li
 {
 	list-style: none;
 	float: left;
@@ -358,7 +357,7 @@ margin-bottom:20px;
     margin: 0;
 }
 .footer-int{
-	
+
     margin: 0 auto;
     padding: 10px;
     text-align: center;
@@ -368,7 +367,7 @@ margin-bottom:20px;
 	text-decoration:none;
 	font-size: 13px;
 	padding-bottom: 3px;
-	  -moz-transition:all 0.2s ease-in 0s;	
+	  -moz-transition:all 0.2s ease-in 0s;
     -webkit-transition:all 0.2s ease-in 0s;
     -ms-transition:all 0.2s ease-in 0s;
     -o-transition:all 0.2s ease-in 0s;
@@ -420,12 +419,12 @@ margin-right:10px;
 }
 /* ***************************************************************************************************** */
 /* LIST STYLES */
-ul.bullet1, 
-ul.bullet2, 
-ul.bullet3, 
-ul.bullet4, 
-ul.bullet5, 
-ul.bullet6, 
+ul.bullet1,
+ul.bullet2,
+ul.bullet3,
+ul.bullet4,
+ul.bullet5,
+ul.bullet6,
 ul.bullet7,
 ul.bullet8,
 ul.bullet9,
@@ -444,12 +443,12 @@ padding-left: 0;
 margin-left: 0;
 list-style: none;
 }
-ul.bullet1 li, 
-ul.bullet2 li, 
-ul.bullet3 li, 
-ul.bullet4 li, 
-ul.bullet5 li, 
-ul.bullet6 li, 
+ul.bullet1 li,
+ul.bullet2 li,
+ul.bullet3 li,
+ul.bullet4 li,
+ul.bullet5 li,
+ul.bullet6 li,
 ul.bullet7 li,
 ul.bullet8 li,
 ul.bullet9 li,
@@ -533,12 +532,12 @@ body .items-row{
 	padding-bottom: 10px;
 }
 .category p {
-	padding: 0; 
+	padding: 0;
 }
 body .category{
 	font-size: 12px;
 }
- 
+
 .category thead tr th {
   background-image: url(../images/Red/sectiontable_header.png);
 }
@@ -566,7 +565,7 @@ tr.cat-list-row0 td{
 body .readmore , body .readon{
 	text-align: right;
 }
-body .readmore a, 
+body .readmore a,
 body .readon a {
 	font-weight: bold;
 }
@@ -578,7 +577,7 @@ body .readon a {
 	font-weight: normal;
 }
 li.parent-category-name, li.category-name, li.create, li.modified, li.published, li.createdby, li.hits{
-	font: small-caps 10px/10px "Lucida Grande",Lucida,Verdana,sans-serif;
+	font: small-caps 10px/16px "Lucida Grande",Lucida,Verdana,sans-serif;
 }
 div.categories-list span.item-title, div.cat-children span.item-title {
     font-family: "georgia";
@@ -609,7 +608,7 @@ body div a.joomlashack {
 	background-repeat:no-repeat;
 	color: #BE1D2C;
 	font-size:12px;
-	padding-right:13px; 
+	padding-right:13px;
 	float: right;
 }
 table.demo-table{
@@ -623,7 +622,7 @@ table.demo-table td{
 }
 table.demo-table tr + tr td{
 	padding: 0 5px;
-	
+
 }
 table.demo-table h4{
 	margin: 0;
@@ -649,7 +648,7 @@ input.mod-search-searchword:focus{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-    
+
 
 .footer1,
 .footer2{
@@ -734,11 +733,11 @@ p {
 
 a {
 	color: #9c0000;
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 a:hover {
-	color: #bb1015;	
-	text-decoration: underline;	
+	color: #bb1015;
+	text-decoration: underline;
 }
 
 /* EXTRA STYLES */
@@ -1017,7 +1016,7 @@ table#panel td.clm-c {
 /* @end */
 
 /* @group Modules */
- 
+
  /* Header Module */
 #headermod {
 	float: right;
@@ -1061,44 +1060,44 @@ div.module .pad7{
 	background-image: url("../images/left-pad.png");
 	background-position: left bottom;
 	background-repeat: repeat-x;
-	padding-bottom: 10px;	
+	padding-bottom: 10px;
 	height: 10px;
 }
 div.module .pad{
 	background-image: url("../images/left-pad.png");
 	background-position: left top;
 	background-repeat: repeat-y;
-	
+
 }
 div.module_ms1 .pad{
 	background-image: url("../images/Red/ms1/left-pad.png");
 	background-position: left top;
 	background-repeat: repeat-y;
-	
+
 }
 div.module_ms2 .pad{
 	background-image: url("../images/Red/ms2/left-pad.png");
 	background-position: left top;
 	background-repeat: repeat-y;
-	
+
 }
 div.module .pad2{
 	background-image: url("../images/right-pad2.png");
 	background-position: right top;
 	background-repeat: repeat-y;
-	
+
 }
 div.module_ms1 .pad2{
 	background-image: url("../images/Red/ms1/right-pad2.png");
 	background-position: right top;
 	background-repeat: repeat-y;
-	
+
 }
 div.module_ms2 .pad2{
 	background-image: url("../images/Red/ms2/right-pad2.png");
 	background-position: right top;
 	background-repeat: repeat-y;
-	
+
 }
 .pad,
 .pad2,
@@ -1109,7 +1108,7 @@ div.module .pad3{
 	background-color: white;
 	margin: 0 10px;
 	overflow: visible;
-	
+
 }
 
 div.module_ms1 .pad3{
@@ -1452,7 +1451,7 @@ div.module_ms4 .pad5{
     position: absolute;
     right: -24px;
     top: 2px;
-    width: 100%; 
+    width: 100%;
     z-index: 4;
     background-repeat: no-repeat;
     background-position:top right;
@@ -1625,7 +1624,7 @@ div#banner {
 }
 
 .moduletable-banner {
-	text-align: center;	
+	text-align: center;
 	margin: 5px auto;
 }
 
@@ -1737,7 +1736,7 @@ tr.sectiontableentry1 td,
 td.sectiontableentry1 {
 background: #f6f4e5;
 padding: 4px;
-border-bottom: 1px solid #f0f0e1;	
+border-bottom: 1px solid #f0f0e1;
 }
 tr.sectiontableentry2 td,
 td.sectiontableentry2 {
@@ -1800,7 +1799,7 @@ a.contentpagetitle {
 	color: #470705;
 }
 a.contentpagetitle:hover {
-	color: #000;	
+	color: #000;
 	text-decoration: none;
 }
 td.contentheading {
@@ -1999,8 +1998,8 @@ body.mceContentBody {
     background-position: top -10px;
     background-repeat: repeat-y;
 }
-div.module.no_title .pad-title, 
-div.module_ms1.no_title .pad-title, 
+div.module.no_title .pad-title,
+div.module_ms1.no_title .pad-title,
 div.module_ms2.no_title .pad-title{
 	border:0 none;
 }
@@ -2011,3 +2010,4 @@ fieldset.filters div.alert{
 .category thead tr th {
 	color:white;
 }
+img{max-width: 100%}

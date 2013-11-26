@@ -28,6 +28,7 @@ $text = $this -> params -> get('text-button', 'Featured');
 	<html>
 		<head>
 			<w:head />
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 			<?php if (strpos($menutype,'accordion') !== FALSE): ?>
 			<script language="javascript" type="text/javascript">
 				var wrightAccordionHover = <?php echo ((strpos($menutype,'hover') === FALSE) ? "false" : "true"); ?>;

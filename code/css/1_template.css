@@ -2152,3 +2152,29 @@ div.module .pad3:after
 {
 	margin-left: 10px;
 }
+
+.contact-address.dl-horizontal{
+	margin-bottom: 20px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+{
+	background-color: #D7D2B7;
+}
+
+.cat-children h3.item-title
+{
+	font-size: 18px;
+}
+.cat-children > div
+{
+	padding-left: 15px;
+}
+.nav.nav-tabs.nav-stacked > li
+{
+	float: none;
+}
+.nav.nav-tabs.nav-stacked > li > a
+{
+	margin-right: 0;
+}

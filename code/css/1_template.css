@@ -2200,3 +2200,11 @@ div.module .pad3:after
 {
 	width: 25px;
 }
+::selection
+{
+	background-color: #E9E6D7;
+}
+::-moz-selection
+{
+	background-color: #E9E6D7;
+}

@@ -549,6 +549,12 @@ tr.cat-list.row0 td,
 tr.cat-list-row0 td{
 	background-color: #F6F4E5;
 }
+tr.cat-list-row0 .list-title,
+tr.cat-list-row1 .list-title
+{
+	padding: 4px;
+}
+
 .category thead tr a{
 	color: #fff;
 }
@@ -2029,8 +2035,6 @@ dl.article-info
 {
 	padding: 2px;
 	border: 0;
-	height: 23px;
-
 }
 .breadcrumb li
 {
@@ -2177,4 +2181,22 @@ div.module .pad3:after
 .nav.nav-tabs.nav-stacked > li > a
 {
 	margin-right: 0;
+}
+
+.item-page .tags
+{
+	margin-bottom: 10px;
+}
+.contact .contact-position.dl-horizontal  dd
+{
+	margin-left: 0;
+	padding-left: 0;
+}
+.contact .contact-address.dl-horizontal  dd
+{
+	margin-left: 40px;
+}
+.contact .contact-address.dl-horizontal  dt
+{
+	width: 25px;
 }

@@ -1222,9 +1222,14 @@ margin:0;
 padding:0;
 list-style:none;
 }
+.items-more ol
+{
+	border: 1px solid #ccc;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
 .items-more li{
-padding:5px 10px 5px 25px;
-font-size:12px;
+	font-size:12px;
 }
 .items-more li a{
  	color: #660000;

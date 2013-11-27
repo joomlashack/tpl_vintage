@@ -6,28 +6,12 @@
 
 // WrightTemplate class, for special
 defined('_JEXEC') or die('Restricted access');
-
-if (version_compare(JVERSION, '3.0', 'lt')) {
-	JHTML::_('behavior.mootools');
-}
-else {
-	JHtmlBehavior::framework($extras=true);
-}
-
-// WrightTemplate class, for special settings on Wright
-class WrightTemplate extends WrightTemplateBase {
-	public $suffixes = true;
-}
-
-$menutype = $this -> params -> get('menutype', 'accordion-open');
-$disable_featured = ($this -> params -> get('disable-featured', '0') != '0' ? true : false);
-$text = $this -> params -> get('text-button', 'Featured');
-
 ?>
 <doctype>
 	<html>
 		<head>
 			<w:head />
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 			<?php if (strpos($menutype,'accordion') !== FALSE): ?>
 			<script language="javascript" type="text/javascript">
 				var wrightAccordionHover = <?php echo ((strpos($menutype,'hover') === FALSE) ? "false" : "true"); ?>;
@@ -60,7 +44,7 @@ $text = $this -> params -> get('text-button', 'Featured');
 									</div>
 								</div>
 							</div>
-							
+
 							<?php    endif;?>
 							</div>
 						</div>
@@ -78,7 +62,7 @@ $text = $this -> params -> get('text-button', 'Featured');
 				<?php if ($this->countModules('featured')) :
 				?>
 				<div class="featured-wrapper container_12" id="featured-wrapper">
-					
+
 					<div class="featured1-wrapper ">
 						<div class="pad-fe">
 							<div class="pad2-fe"></div>
@@ -86,18 +70,18 @@ $text = $this -> params -> get('text-button', 'Featured');
 						<div >
 							<div class="featured2-wrapper ">
 						<w:module type="grid" name="featured" chrome="wrightflexgridimages" />
-							
+
 						<div class="clr"></div>
 						</div>
 
-							
+
 						</div>
 						<div class="pad3-fe">
 							<div class="pad4-fe"></div>
 						</div>
 					<div class="clear"></div>
 					</div>
-					
+
 				</div>
 				<?php    endif;?>
 

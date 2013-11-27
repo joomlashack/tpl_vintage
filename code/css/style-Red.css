@@ -66,3 +66,9 @@ div.module_ms2.no_title .pad4{
 	height: 7px;
 	padding: 0 0 0 7px;
 }
+
+#sidebar1 .menu > li > span,
+#sidebar2 .menu > li > span
+{
+	color: #9c0000;
+}

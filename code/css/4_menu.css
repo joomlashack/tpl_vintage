@@ -22,11 +22,10 @@
 #menu.featured ul.menu {
 	position: relative;
 	float: left;
-	width: 780px;
 }
 
-#menu ul, 
-#menu ul li, 
+#menu ul,
+#menu ul li,
 #menu ul ul{
 	list-style: none;
 	margin: 0;
@@ -43,7 +42,7 @@
 	line-height: 1.3em;
 	vertical-align: middle;
 	zoom: 1;
-	border-left:1px solid #42110A; 
+	border-left:1px solid #42110A;
 }
 #menu ul li.active > a{
 	color: #E3DAA1;
@@ -57,7 +56,7 @@
 }
 #menu ul li a,
 #menu ul li span {
-	border-left:1px solid #6F1109; 
+	border-left:1px solid #6F1109;
 	display:block;
 	padding:11px 15px;
 	font-family:"Georgea";
@@ -66,21 +65,14 @@
 	text-decoration:none;
 	font-weight:normal;
 }
-#menu ul li.hover, 
+#menu ul li.hover,
 #menu ul li:hover{
 	cursor: default;
 }
-#menu ul li ul li.parent{
-	background: url("../images/Red/arrow_right.gif") no-repeat scroll 98% 50% ;
-}
-#menu ul li ul li.parent a,
-#menu ul li ul li.parent span{
-	padding-right: 20px;
-}
-#menu ul ul { 
+#menu ul ul {
 	background-image:url("../images/Red/menu_gradient.png");
 	background-repeat:repeat-x;
-	background-color:#860805;   
+	background-color:#860805;
 	height: auto;
 	display:none;
 	position: absolute;
@@ -109,6 +101,13 @@
 #menu ul li ul li:hover{
 	background-image: none;
 	background-color: #780705;
+}
+#menu ul li ul li.parent{
+	background: url("../images/Red/arrow_right.gif") no-repeat scroll 98% 50% ;
+}
+#menu ul li ul li.parent a,
+#menu ul li ul li.parent span{
+	padding-right: 20px;
 }
 #menu ul li ul li a,
 #menu ul li ul li span{

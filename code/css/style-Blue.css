@@ -153,11 +153,11 @@ p {
 
 a {
 	color: #305185;
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 a:hover {
 	color: #305185;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 /* EXTRA STYLES */
@@ -406,7 +406,7 @@ table#panel td.clm-c {
 /* @end */
 
 /* @group Modules */
- 
+
  /* Header Module */
 #headermod {
 	float: right;
@@ -548,7 +548,7 @@ tr.sectiontableentry1 td,
 td.sectiontableentry1 {
 background: #f6f4e5;
 padding: 4px;
-border-bottom: 1px solid #f0f0e1;	
+border-bottom: 1px solid #f0f0e1;
 }
 tr.sectiontableentry2 td,
 td.sectiontableentry2 {
@@ -590,7 +590,7 @@ a.contentpagetitle {
 	color: #470705;
 }
 a.contentpagetitle:hover {
-	color: #000;	
+	color: #000;
 	text-decoration: none;
 }
 td.contentheading {
@@ -660,4 +660,10 @@ table.contenttoc th {
 	font-weight: normal;
 	font-style: normal;
 	font-variant: small-caps;
+}
+
+#sidebar1 .menu > li > span,
+#sidebar2 .menu > li > span
+{
+	color: #305185;
 }

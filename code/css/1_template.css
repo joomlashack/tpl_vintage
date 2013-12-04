@@ -2208,3 +2208,10 @@ div.module .pad3:after
 {
 	background-color: #E9E6D7;
 }
+
+.accordion-inner{
+	padding: 10px;
+}
+.accordion-inner .contact-form{
+	padding: 0;
+}

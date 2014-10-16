@@ -1,4 +1,3 @@
-/* @override http://demotemplates.joomlashack.com/vintage/templates/js_vintage_002/css/template_css.css */
 /* @group Global Reset */
 div.module .pad7,
 div.module_ms1 .pad7,
@@ -111,7 +110,6 @@ div.module_ms2 .pad-title{
 	background-color: #365B90;
 	border-bottom: 1px solid black;
 }
-/* @override http://demotemplates.joomlashack.com/vintage/templates/js_vintage_003/css/template_css.css */
 /* @group Global Reset */
 body {
 	background: #053A66 url(../images/Blue/page_bg.png) repeat-x center top;

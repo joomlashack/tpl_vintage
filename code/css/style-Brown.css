@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* CSS Document Copyright © */
 
 div.module .pad-title{
@@ -54,7 +53,6 @@ div.module_ms4 h3 {
 	margin: 0px;
 }
 
-/* @override http://demotemplates.joomlashack.com/vintage/templates/js_vintage_004/css/template_css.css */
 /* @group Global Reset */
 body {
 	background: #46371e url(../images/page_bg.png) repeat-x center top;

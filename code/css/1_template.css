@@ -2222,3 +2222,7 @@ div.module .pad3:after
 div.btn-toolbar div.btn-group{
 	float: none;
 }
+
+.CodeMirror-wrapping{
+	border: 1px solid #000;
+}

@@ -1012,6 +1012,7 @@ font-size:12px;
 padding:0 0 5px 0;
 display:block;
 }
+span.content_vote select,
 span.content_vote input {
 margin:0 3px;
 }

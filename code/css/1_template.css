@@ -2226,3 +2226,18 @@ div.btn-toolbar div.btn-group{
 .CodeMirror-wrapping{
 	border: 1px solid #000;
 }
+
+.pagenav {
+	*zoom: 1;
+}
+
+.pagenav:before,
+.pagenav:after {
+	display: table;
+	content: "";
+}
+
+.pagenav:after {
+	clear: both;
+}
+

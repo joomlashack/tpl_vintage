@@ -81,7 +81,9 @@ defined('_JEXEC') or die('Restricted access');
 		<?php
 			endif;
 		?>
+		<div class="main-bg-top"></div>
 		<div id="main-content" class="<?php echo $wrightGridMode; ?>">
+		<div class="main-bg-repeat"></div>
 			<!-- sidebar1 -->
 			<aside id="sidebar1">
 				<w:module name="sidebar1" chrome="xhtml" />
@@ -129,6 +131,7 @@ defined('_JEXEC') or die('Restricted access');
 				<w:module name="sidebar2" chrome="xhtml" />
 			</aside>
 		</div>
+		<div class="main-bg-bottom"></div>
 		<?php
 			if ($this->countModules('grid-bottom'))
 				:

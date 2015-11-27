@@ -1,18 +1,3 @@
-.content-bg-bottom {
-  bottom: 0;
-
-  &:before, &:after {
-    background-image: url(../images/red/bg-bottom.png);
-  }
-}
-
-.content-bg-top {
-  top: 0;
-
-  &:before, &:after {
-    background-image: url(../images/red/bg-top.png);
-  }
-}
 
 .content-bg-before-after {
   &:before, &:after {
@@ -35,15 +20,23 @@
   }
 }
 
+.content-bg-bottom {
+  &:before, &:after {
+    background-image: url(../images/red/bg-bottom.png);
+  }
+}
+
+.content-bg-top {
+  &:before, &:after {
+    background-image: url(../images/red/bg-top.png);
+  }
+}
+
 .content-bg-bottom,
 .content-bg-top {
   height: 30px;
   position: relative;
   .content-bg-before-after;
-}
-
-#main-content {
-  margin-bottom: 0;
 }
 
 .content-bg-repeat {
@@ -61,14 +54,77 @@
 
 .content-wrapp {
   .box-sizing(border-box);
-  padding: 0 20px;
+  padding: 0 32px;
   position: relative;
 }
+
+#header,
+#main-content {
+  margin-bottom: 0;
+}
+
+#header {
+  .content-bg-repeat {
+    &:before , &:after {
+      background-image: url(../images/red/header-repeat.png);
+    }
+  }
+}
+
+.header-bg-bottom {
+  &:before, &:after {
+    background-image: url(../images/red/header-bottom.png);
+  }
+}
+
+.header-bg-top {
+  &:before, &:after {
+    background-image: url(../images/red/header-top.png);
+  }
+}
+
+.header-bg-bottom,
+.header-bg-top {
+  height: 36px;
+  position: relative;
+  .content-bg-before-after;
+}
+
+
+//-----------------------------------------------------------------------------------
+
+.wrapper-menu {
+  .center-block;
+  margin-top: -5px;
+  width: 90%;
+}
+
+//-----------------------------------------------------------------------------------
+
+.navbar-inner {
+  .box-shadow(none);
+}
+
+//-----------------------------------------------------------------------------------
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+//-----------------------------------------------------------------------------------
+
+legend, .page-header,
+div.cat_children>div, div.cat-children>div, div.categories-list>div {
+  border-bottom-color: @hrBorder;
+}
+
+//-----------------------------------------------------------------------------------
 
 #footer {
   background-color: transparent;
   background-image: none;
   filter: none;
+  color: @textColor;
 }
 
 

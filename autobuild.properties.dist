@@ -1,2 +1,2 @@
-www.dir=/var/www/vintage
+www.dir=/var/www/vintage/
 node.build=all

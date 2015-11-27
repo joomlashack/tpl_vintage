@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
 <extension version="2.5" type="template" method="upgrade" client="site">
-	<name>js_impacto</name>
+	<name>js_vintage</name>
 	<creationDate>November 2015</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
@@ -9,15 +9,15 @@
 	<copyright>Copyright Joomlashack 2005 - 2015. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
 	<version>4.0.0</version>
-    <description>TPL_JS_IMPACTO_XML_DESCRIPTION</description>
+    <description>TPL_JS_VINTAGE_XML_DESCRIPTION</description>
 
 	<languages folder="language">
 		<!-- en-GB -->
-		<language tag="en-GB">en-GB/en-GB.tpl_js_impacto.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_js_impacto.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_vintage.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_vintage.sys.ini</language>
 		<!-- es-ES -->
-		<language tag="es-ES">es-ES/es-ES.tpl_js_impacto.ini</language>
-		<language tag="es-ES">es-ES/es-ES.tpl_js_impacto.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_vintage.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_vintage.sys.ini</language>
 	</languages>
 
 	<files>
@@ -57,7 +57,7 @@
 	</positions>
 
 	<config>
-		<fields name="params" addfieldpath="/templates/js_impacto/wright/parameters/joomla_2.5">
+		<fields name="params" addfieldpath="/templates/js_vintage/wright/parameters/joomla_2.5">
 			<fieldset name="basic">
                 <!-- Start of default Wright params -->
 				<field name="wright" type="wright"/>
@@ -107,11 +107,7 @@
 				</field>
                 <!-- End of default Wright params -->
 			</fieldset>
-			<fieldset name="TPL_JS_IMPACTO_OPTIONS">
-				<field name="impacto_gradient_content" type="list" default="1" label="TPL_JS_IMPACTO_GRADIENT_CONTENT" description="TPL_JS_IMPACTO_GRADIENT_CONTENT_DESC">
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
-				</field>
+			<fieldset name="TPL_JS_VINTAGE_OPTIONS">
             </fieldset>
 		</fields>
 	</config>

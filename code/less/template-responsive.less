@@ -1,6 +1,19 @@
+@media (min-width: 940px) {
+   .content-bg-repeat {
+        width: 940px;
+    }
+}
+
 @media (min-width: 1200px) {
     .content-bg-repeat {
         width: 1170px;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .content-bg-repeat {
+        width: 724px;
     }
 }
 
@@ -74,8 +87,6 @@
 /* Phones */
 @media (max-width: 767px) {
 
-	#header,
-	.wrapper-menu,
 	.wrapper-content{
 		margin-left: -20px;
 		margin-right: -20px;
@@ -300,4 +311,7 @@
     	margin-bottom: 10px;
     }
 
+    .content-bg-repeat {
+        width: 100%;
+    }
 }

@@ -33,18 +33,20 @@ defined('_JEXEC') or die('Restricted access');
 	?>
 	<div class="<?php echo $wrightContainerClass; ?>">
 		<!-- header -->
-		<header id="header">
-			<div class="<?php echo $wrightGridMode; ?> clearfix">
+		<div class="header-bg-top"></div>
+		<header id="header" class="content-wrapp">
+			<div class="content-bg-repeat"></div>
+			<div class="row-fluid">
 				<w:logo name="top" />
-				<div class="clear"></div>
 			</div>
 		</header>
+		<div class="header-bg-bottom"></div>
 		<?php
 			if ($this->countModules('menu'))
 				:
 		?>
 		<!-- menu -->
-   		<w:nav name="menu" />
+   		<w:nav name="menu" wrapClass="navbar-inverse" />
 		<?php
 			endif;
 		?>
@@ -171,7 +173,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 				?>
 				<!-- bottom-menu -->
-				<w:nav containerClass="" rowClass="row-fluid" name="bottom-menu" wrapClass="navbar-inverse navbar-transparent" />
+				<w:nav containerClass="" rowClass="row-fluid" name="bottom-menu" wrapClass="" />
 				<?php
 					endif;
 				?>

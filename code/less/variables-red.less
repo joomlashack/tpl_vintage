@@ -29,25 +29,16 @@
 @navbarInverseDropdownLinkBackgroundHover : @dropdownLinkBackgroundHover;
 @navbarInverseDropdownLinkBackgroundActive : @dropdownLinkBackgroundActive;
 
-@color_one  : @white;  // body backgroundColor
-@color_two  : #2F4145; // Header top Gradient
+@color_one  : @red;  // body backgroundColor
+@color_two  : #E3DAA1; // Header top Gradient
 @color_three: #20282A; // Header bottom Gradient
-@color_four : #ae1300; // Navbar top Gradient
-@color_five : #870d00; // Navbar bottom Gradient
+@color_four : #3c0905; // Navbar top Gradient
+@color_five : #7b160c; // Navbar bottom Gradient
 
 @selectionBackgroundColor:#DCAFAA;
 
 @tabsBackground      : @red;
 @tabsBackgroundHover : darken(@tabsBackground, 5%);
-
-@navbarLinkGradientTopHover     : #666;
-@navbarLinkGradientBottomHover  : #282828;
-@navbarLinkGradientTopActive    : #6A0700;
-@navbarLinkGradientBottomActive : #390200;
-
-@navbarLinkTextShadow       : #4B0001;
-@navbarLinkTextShadowHover  : #000;
-@navbarLinkTextShadowActive : #370000;
 
 
 // Global values
@@ -61,7 +52,7 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
-@grayLighter:           #eee;
+@grayLighter:           #F6F4E5;
 @white:                 #fff;
 
 
@@ -80,13 +71,13 @@
 // Scaffolding
 // -------------------------
 @bodyBackground:        @color_one;
-@textColor:             #575757;
+@textColor:             @black;
 
 
 // Links
 // -------------------------
 @linkColor:             @red;
-@linkColorHover:        #b40000;
+@linkColorHover:        #bb1015;
 
 
 // Typography
@@ -95,10 +86,10 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontSize:          13px;
+@baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @sansFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
@@ -125,15 +116,15 @@
 // Tables
 // -------------------------
 @tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f5f5f5; // for striping
-@tableBackgroundHover:              #efefef; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBackgroundAccent:             darken(@grayLighter,2%); // for striping
+@tableBackgroundHover:              @grayLighter; // for hover
+@tableBorder:                       @hrBorder; // table and cell border
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     transparent;
+@btnBackgroundHighlight:            transparent;
+@btnBorder:                         @hrBorder;
 
 @btnPrimaryBackground:              @red;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
@@ -157,10 +148,10 @@
 // Forms
 // -------------------------
 @inputBackground:               @white;
-@inputBorder:                   #ccc;
+@inputBorder:                   #ede9ca;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
-@formActionsBackground:         #f5f5f5;
+@formActionsBackground:         @grayLighter;
 @inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
@@ -209,7 +200,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+@hrBorder:                #dbcf85;
 
 
 // Horizontal forms & lists
@@ -219,7 +210,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #f5f5f5;
+@wellBackground:                  @grayLighter;
 
 
 // Navbar
@@ -228,30 +219,30 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       @color_four;
-@navbarBackground:                @color_five;
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackgroundHighlight:       #fffef1;
+@navbarBackground:                #fffef1;
+@navbarBorder:                    #fffef1;
 
-@navbarText:                      #777;
-@navbarLinkColor:                 @white;
-@navbarLinkColorHover:            #e00003;
-@navbarLinkColorActive:           @white;
-@navbarLinkBackgroundHover:       @grayDark;
-@navbarLinkBackgroundActive:      #560500;
+@navbarText:                      @linkColor;
+@navbarLinkColor:                 @linkColor;
+@navbarLinkColorHover:            @linkColorHover;
+@navbarLinkColorActive:           @linkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      transparent;
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                #7b160c;
+@navbarInverseBackgroundHighlight:       #3c0905;
+@navbarInverseBorder:                    #2b160d;
 
-@navbarInverseText:                      @grayLight;
+@navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
-@navbarInverseLinkColorHover:            #E00003;
-@navbarInverseLinkColorActive:           @white;
-@navbarInverseLinkBackgroundHover:       @grayDark;
-@navbarInverseLinkBackgroundActive:      #560500;
+@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorActive:           @color_two;
+@navbarInverseLinkBackgroundHover:       #3d2518;
+@navbarInverseLinkBackgroundActive:      transparent;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
@@ -263,9 +254,9 @@
 
 // Pagination
 // -------------------------
-@paginationBackground:                #fff;
-@paginationBorder:                    #ddd;
-@paginationActiveBackground:          #f5f5f5;
+@paginationBackground:                @grayLighter;
+@paginationBorder:                    @hrBorder;
+@paginationActiveBackground:          transparent;
 
 
 // Hero unit

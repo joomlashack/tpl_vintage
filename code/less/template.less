@@ -195,8 +195,13 @@ div.cat_children>div, div.cat-children>div, div.categories-list>div {
       display: inline-block;
       margin-right: 4px;
     }
+li {
+  a [class^="icon-"], a [class*=" icon-"] {
+    display: inline-block;
+    margin-right: 4px;
   }
 }
+
 .counter {
   &.pull-right {
     line-height: 30px;
@@ -208,6 +213,60 @@ dl.article-info dd:hover, dl.article-info dd>div:hover {
   background-color: transparent;
 }
 
+.well {
+  .box-shadow(none);
+}
+
+p.img_caption {
+  background-color: @grayLighter;
+}
+
+.item-image {
+  margin-bottom: 18px;
+}
+
+.pager {
+  li>a, li>span {
+    background-color: @grayLighter;
+    border-color: @hrBorder;
+    color: @textColor;
+
+    &:hover, &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+.form-actions {
+  border-top-color: @inputBorder;
+}
+
+.thumbnail {
+  border-color: @inputBorder;
+}
+
+.list-striped {
+  border-top-color: @inputBorder;
+}
+
+.list-striped li,
+.list-striped dd,
+.row-striped .row,
+.row-striped .row-fluid {
+  border-bottom-color: @inputBorder;
+}
+
+.accordion-group {
+  background-color: @tableBackgroundAccent;
+  border-color: @hrBorder;
+}
+
+.accordion-inner {
+  border-top-color: @hrBorder;
+}
+
+
+//-----------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------
 
 #footer {

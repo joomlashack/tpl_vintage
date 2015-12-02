@@ -110,8 +110,20 @@
 //-----------------------------------------------------------------------------------
 
 .navbar {
-  li a {
-    font-size: @baseFontSize + 1;
+  .nav {
+    li a {
+      font-size: @baseFontSize + 1;
+    }
+
+    > .active {
+      > a {
+        .box-shadow(none);
+
+        &:hover, &:focus {
+          .box-shadow(none);
+        }
+      }
+    }
   }
 }
 

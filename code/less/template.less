@@ -290,6 +290,49 @@ p.img_caption {
 
 //-----------------------------------------------------------------------------------
 
+.nav {
+  // General Submenus (only vertical menus)
+
+  ul.submenu {
+    > li {
+      > a {
+        color: @textColor;
+
+        .caret {
+          border-top-color: @textColor;
+        }
+
+        &:hover, &:focus{
+          color: lighten(@linkColorHover, 2%);
+
+          .caret {
+            border-top-color: lighten(@linkColorHover, 2%);
+          }
+        }
+      }
+
+      &.active {
+        > a {
+          color: lighten(@linkColorHover, 2%);
+
+          .caret {
+            border-top-color: lighten(@linkColorHover, 2%);
+          }
+
+          &:hover, &:focus{
+            color: lighten(@linkColorHover, 2%);
+
+            .caret {
+              border-top-color: lighten(@linkColorHover, 2%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .nav-tabs.nav-stacked>li>a {border-color: @inputBorder;}
 
 .nav-tabs.nav-stacked>li>a:hover, .nav-tabs.nav-stacked>li>a:focus

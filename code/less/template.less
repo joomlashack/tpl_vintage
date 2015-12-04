@@ -135,7 +135,7 @@
   border: 0;
   padding: 0;
 
-  .nav {
+  &.nav, .nav {
     background-image: url(../images/red/navcontainer-repeat.png);
     background-repeat: repeat-x;
     background-position: center bottom;
@@ -167,10 +167,11 @@
     }
 
     > li {
+      border-right: 1px solid #42110A;
       display: inline-block;
       float: none;
       line-height: 1.6em;
-      border-right: 1px solid #42110A;
+      position: relative;
 
       > a {
         border-right: 1px solid #6F1109;
@@ -293,6 +294,115 @@ p.img_caption {
 
 .nav-tabs.nav-stacked>li>a:hover, .nav-tabs.nav-stacked>li>a:focus
   {border-color: @inputBorder;}
+
+.nav-tabs{
+  border-bottom-color: @color_one;
+  > li {
+    > a {
+      border-width: 1px 0 1px 0;
+
+      &:hover, &:focus{
+        border-bottom-color: @color_one;
+      }
+    }
+
+    &.active {
+      > a {
+        color: @white;
+
+        &:hover, &:focus{
+          color: @white;
+        }
+      }
+
+      > .dropdown-toggle {
+        .caret {
+          border-top-color: @white;
+        }
+
+        &:hover, &:focus{
+          .caret {
+            border-top-color: @white;
+          }
+        }
+      }
+    }
+  }
+
+  dt {
+    a{
+      color: @white;
+
+      .caret {
+        border-top-color: @white;
+      }
+
+        &:hover, &:focus {
+        color: black;
+
+          .caret {
+          border-top-color: black;
+        }
+        }
+    }
+    &.open {
+      a {
+        color : black;
+
+        .caret {
+          border-top-color: black;
+        }
+
+        &:hover, &:focus {
+          color : black;
+
+          .caret {
+            border-top-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs-left {
+  >.nav-tabs {
+    border-right-color: @color_one;
+
+    > li {
+      > a {
+        border-right-width: 1px;
+
+        &:hover, &:focus {
+          border-right-color: @color_one;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.tabs-right {
+  >.nav-tabs {
+    border-left-color: @color_one;
+
+    > li {
+      > a {
+        border-left-width: 1px;
+
+        &:hover, &:focus {
+          border-left-color: @color_one;
+        }
+      }
+    }
+  }
+}
+
+
+
+
 
 //-----------------------------------------------------------------------------------
 

@@ -116,11 +116,27 @@
         }
       }
     }
+
+    > li {
+      &:first-child {
+        > a {
+          padding-left: 0;
+        }
+      }
+
+      &:last-child {
+        > a {
+          padding-right: 0;
+        }
+      }
+    }
   }
 }
 
 .navbar-inner {
   .box-shadow(none);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-inverse .navbar-inner {
@@ -171,6 +187,19 @@
       }
     }
 
+    > li {
+      &:first-child {
+        > a {
+          padding-left: 15px;
+        }
+      }
+
+      &:last-child {
+        > a {
+          padding-right: 15px;
+        }
+      }
+    }
   }
 }
 
@@ -199,6 +228,26 @@
       }
     }
 
+  }
+}
+
+//-----------------------------------------------------------------------------------
+
+.navbar-transparet {
+  .nav {
+    > li {
+      &:first-child {
+        > a {
+          padding-left: 0;
+        }
+      }
+
+      &:last-child {
+        > a {
+          padding-right: 0;
+        }
+      }
+    }
   }
 }
 

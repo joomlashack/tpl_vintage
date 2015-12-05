@@ -21,6 +21,15 @@ defined('_JEXEC') or die('Restricted access');
 		<w:head />
 	</head>
 	<body class="<?php echo $wrightBodyClass ?>">
+		<?php
+			if ($this->countModules('toolbar'))
+				:
+		?>
+		<!-- menu -->
+		<w:nav containerClass="<?php echo $wrightContainerClass ?>" rowClass="<?php echo $wrightGridMode ?>" wrapClass="navbar-fixed-top navbar-inverse" type="toolbar" name="toolbar" />
+		<?php
+			endif;
+		?>
 		<div class="<?php echo $wrightContainerClass; ?>">
 			<!-- header -->
 			<div class="header-bg-top"></div>

@@ -101,14 +101,6 @@
 
 //-----------------------------------------------------------------------------------
 
-.wrapper-menu {
-  .center-block;
-  margin-top: -5px;
-  width: 90%;
-}
-
-//-----------------------------------------------------------------------------------
-
 .navbar {
   .nav {
     li a {
@@ -176,6 +168,34 @@
       > a {
         border-right: 1px solid #6F1109;
         min-height: 20px;
+      }
+    }
+
+  }
+}
+
+//-----------------------------------------------------------------------------------
+
+.wrapper-menu {
+  .center-block;
+  margin-top: -5px;
+  width: 90%;
+}
+
+//-----------------------------------------------------------------------------------
+
+#toolbar {
+  .navbar-inverse {
+    .navbar-inner {
+      .nav {
+        background-color: transparent;
+        background-image: none;
+        padding-bottom: 0;
+
+        &:after, &:before {
+          content: none;
+          display: none;
+        }
       }
     }
 

@@ -302,10 +302,68 @@ div.categories-list>div {
 			.box-shadow(none);
 		}
 	}
+
+	&.btn-primary,
+	&.btn-warning,
+	&.btn-danger,
+	&.btn-info,
+	&.btn-success,
+	&.btn-inverse {
+		.caret {
+			.transition(all .4s ease-in);
+			border-bottom-color: @textColor;
+			border-top-color: @textColor;
+		}
+
+		&:hover, &:focus {
+			.caret {
+				border-bottom-color: @white;
+				border-top-color: @white;
+			}
+		}
+	}
 }
 
-.btn-group.open .dropdown-toggle {
-	.box-shadow(inset 0 0 200px @btnBorder);
+.btn-group.open {
+	.dropdown-toggle {
+		.box-shadow(inset 0 0 200px @btnBorder);
+	}
+
+	.btn-primary.dropdown-toggle {
+		&:hover, &:focus {
+			.box-shadow(inset 0 0 200px @btnPrimaryBackground);
+		}
+	}
+
+	.btn-info.dropdown-toggle {
+		&:hover, &:focus {
+			.box-shadow(inset 0 0 200px @btnInfoBackground);
+		}
+	}
+
+	.btn-success.dropdown-toggle {
+		&:hover, &:focus {
+			.box-shadow(inset 0 0 200px @btnSuccessBackground);
+		}
+	}
+
+	.btn-warning.dropdown-toggle {
+		&:hover, &:focus {
+			.box-shadow(inset 0 0 200px @btnWarningBackground);
+		}
+	}
+
+	.btn-danger.dropdown-toggle {
+		&:hover, &:focus {
+			.box-shadow(inset 0 0 200px @btnDangerBackground);
+		}
+	}
+
+	.btn-inverse.dropdown-toggle {
+		&:hover, &:focus {
+			.box-shadow(inset 0 0 200px @btnInverseBackground);
+		}
+	}
 }
 
 //-----------------------------------------------------------------------------------

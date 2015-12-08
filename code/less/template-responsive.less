@@ -47,16 +47,71 @@
 /* Phones and tablets */
 @media (max-width: 979px) {
 
-	.navbar-inverse {
+    .wrapper-menu {
+        .navbar-inverse {
+            .navbar-inner {
+                .nav {
+                    background-color: transparent;
+                    background-image: none;
+
+                    &:after, &:before {
+                        content: none;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
         .navbar-inner {
             .nav {
-                background-color: transparent;
-                background-image: none;
-
-                &:after, &:before {
-                    content: none;
-                    display: none;
+                > li {
+                    > a {
+                        border: 0;
+                    }
                 }
+
+                > .active {
+                    > a {
+                        .box-shadow(none);
+                    }
+
+                    > .dropdown-toggle {
+                        .caret {
+                            border-top-color: @color_two;
+                        }
+
+                        &:hover, &:focus{
+                            .caret {
+                                border-top-color: @color_two;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .btn-navbar {
+                background-color: @navbarInverseBackground;
+                background-image: none;
+                filter: none;
+            }
+        }
+
+        .nav-collapse .nav>li>a:hover,
+        .nav-collapse .nav>li>a:focus {
+            background-color: transparent;
+        }
+
+        .nav-collapse .dropdown-menu a:hover,
+        .nav-collapse .dropdown-menu a:focus {
+            background-color: darken(@color_four, 4%);
+        }
+    }
+
+    .navbar-inverse {
+        .navbar-inner {
+            .nav {
 
                 > li {
                     border: 0;
@@ -140,12 +195,6 @@
 		background-color: transparent;
 	}
 
-	.navbar .nav-collapse .nav > li > a:hover,
-	.navbar .nav-collapse .nav > li > a:focus,
-	.navbar .nav-collapse .dropdown-menu a:hover,
-	.navbar .nav-collapse .dropdown-menu a:focus {
-		background-color: darken(@navbarInverseBackground, 3%);
-	}
 
 	.filter-search{
         select {

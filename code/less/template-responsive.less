@@ -147,7 +147,7 @@
 		background-color: darken(@navbarInverseBackground, 3%);
 	}
 
-	    .filter-search{
+	.filter-search{
         select {
             margin-bottom: 10px;
             &:last-child{
@@ -337,6 +337,10 @@
             max-width: 75%;
             width: auto;
         }
+
+        .nav>li>a {
+            text-shadow: none;
+        }
     }
 
     .btn-large,
@@ -352,5 +356,10 @@
 
     .content-bg-repeat {
         width: 100%;
+    }
+
+    #footer {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

@@ -117,6 +117,10 @@
 			}
 		}
 	}
+
+	.brand {
+		margin-left: 0;
+	}
 }
 
 .navbar-inner {
@@ -130,35 +134,6 @@
 	padding: 0;
 
 	.nav {
-		background-image: url(../images/red/navcontainer-repeat.png);
-		background-repeat: repeat-x;
-		background-position: center bottom;
-		background-color: #3c0905;
-		float: none;
-		min-height: 40px;
-		padding: 0 9px 4px;
-		position: relative;
-
-
-		&:after, &:before {
-			background-image: url(../images/red/navcontainer.png);
-			background-repeat: no-repeat;
-			content: '';
-			min-height: 40px;
-			width: 30px;
-			position: absolute;
-			bottom: 0;
-		}
-
-		&:after {
-			background-position: -885px bottom;
-			right: 0;
-		}
-
-		&:before {
-			background-position: -11px bottom;
-			left: 0;
-		}
 
 		> li {
 			border-right: 1px solid #42110A;
@@ -195,6 +170,40 @@
 	.center-block;
 	margin-top: -5px;
 	width: 90%;
+
+	.navbar-inverse .navbar-inner {
+		.nav {
+			background-image: url(../images/red/navcontainer-repeat.png);
+			background-repeat: repeat-x;
+			background-position: center bottom;
+			background-color: #3c0905;
+			float: none;
+			min-height: 40px;
+			padding: 0 9px 4px;
+			position: relative;
+
+
+			&:after, &:before {
+				background-image: url(../images/red/navcontainer.png);
+				background-repeat: no-repeat;
+				content: '';
+				min-height: 40px;
+				width: 30px;
+				position: absolute;
+				bottom: 0;
+			}
+
+			&:after {
+				background-position: -885px bottom;
+				right: 0;
+			}
+
+			&:before {
+				background-position: -11px bottom;
+				left: 0;
+			}
+		}
+	}
 }
 
 //-----------------------------------------------------------------------------------

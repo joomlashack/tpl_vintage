@@ -116,6 +116,15 @@
 				}
 			}
 		}
+
+		> li {
+			.dropdown-menu {
+				&:before, &:after {
+					content: none;
+					display: none;
+				}
+			}
+		}
 	}
 
 	.brand {
@@ -171,6 +180,20 @@
 		}
 	}
 }
+
+.dropdown-menu {
+	background-image: url(../images/red/menu_gradient.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	border-width: 0 1px;
+	.border-radius(0);
+
+	&:before {
+		content: none;
+		display: none;
+	}
+}
+
 
 //-----------------------------------------------------------------------------------
 

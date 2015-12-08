@@ -71,7 +71,7 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<div id="grid-top">
-				<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" />
+				<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module"/>
 			</div>
 			<?php
 				endif;
@@ -82,7 +82,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-top2 -->
 			<div id="grid-top2">
-				<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" />
+				<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module"/>
 			</div>
 			<?php
 				endif;
@@ -141,7 +141,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom -->
 			<div id="grid-bottom" >
-					<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" />
+					<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -152,7 +152,7 @@ defined('_JEXEC') or die('Restricted access');
 			?>
 			<!-- grid-bottom2 -->
 			<div id="grid-bottom2" >
-					<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" />
+					<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" extradivs="module" />
 			</div>
 			<?php
 				endif;
@@ -176,7 +176,7 @@ defined('_JEXEC') or die('Restricted access');
 						if ($this->countModules('footer'))
 						:
 					?>
-						<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" />
+						<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" extradivs="module" />
 				 	<?php
 						endif;
 					?>

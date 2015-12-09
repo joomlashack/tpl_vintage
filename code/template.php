@@ -54,8 +54,10 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('featured'))
 					:
 			?>
-			<div id="featured">
-				<w:module type="none" name="featured" chrome="xhtml" />
+			<div id="featured" class="module_ms3">
+				<div class="module-inner">
+					<w:module type="none" name="featured" chrome="xhtml" />
+				</div>
 			</div>
 			<?php
 				endif;
@@ -98,13 +100,6 @@ defined('_JEXEC') or die('Restricted access');
 						if ($this->countModules('above-content'))
 							:
 					?>
-					<!-- above-content -->
-					<div id="above-content">
-						<w:module type="none" name="above-content" chrome="xhtml" />
-					</div>
-					<?php
-						endif;
-					?>
 					<?php
 						if ($this->countModules('breadcrumbs'))
 							:
@@ -112,6 +107,13 @@ defined('_JEXEC') or die('Restricted access');
 					<!-- breadcrumbs -->
 					<div id="breadcrumbs">
 						<w:module type="none" name="breadcrumbs" chrome="xhtml" />
+					</div>
+					<?php
+						endif;
+					?>
+					<!-- above-content -->
+					<div id="above-content">
+						<w:module type="none" name="above-content" chrome="xhtml" />
 					</div>
 					<?php
 						endif;

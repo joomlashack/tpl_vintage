@@ -61,6 +61,118 @@
 	}
 }
 
+.container-fluid {
+	.content-bg-repeat {
+		width: 100%;
+	}
+
+	.content-bg-before-after() {
+		background-position: 0 0;
+		background-repeat: no-repeat;
+
+		&:before, &:after {
+			content: '';
+			height: 100%;
+			position: absolute;
+			top: 0;
+			width: 900px;
+		}
+
+		&:before {
+			background-position: left top;
+			background-repeat: repeat-x;
+			left: 42px;
+			max-width: 90%;
+			right: 20px;
+			width: auto;
+		}
+
+		&:after {
+			background-position: right top;
+			background-repeat: repeat-y;
+			right: 0;
+
+			@media (max-width: 979px) {
+				width: 50px;
+			}
+		}
+	}
+
+	.content-bg-bottom,
+	.content-bg-top {
+		.content-bg-before-after();
+	}
+
+	.content-bg-bottom {
+		background-image: url(../images/red/bg-bottom.png);
+
+		&:before {
+			background-image: url(../images/red/bg-bottom-repeat.png);
+		}
+	}
+
+	.content-bg-top {
+		background-image: url(../images/red/bg-top.png);
+
+		&:before {
+			background-image: url(../images/red/bg-top-repeat.png);
+		}
+	}
+
+	.content-bg-repeat {
+		background-image: url(../images/red/bg-repeat.png);
+		.content-bg-before-after();
+		background-repeat: repeat-y;
+
+		&:before, &:after {
+			background-repeat: repeat-y;
+		}
+
+		&:before {
+			background-image: none;
+			background-color: #fffef1;
+		}
+	}
+
+	#header {
+		.content-bg-repeat {
+			background-image: url(../images/red/header-repeat.png);
+
+
+			&:before {
+				background-image: none;
+				background-color: #faf8e9;;
+			}
+		}
+	}
+
+	.header-bg-bottom,
+	.header-bg-top {
+		.content-bg-before-after();
+
+		&:before {
+			background-color: transparent;
+			background-repeat: repeat-x;
+		}
+	}
+
+	.header-bg-bottom {
+		background-image: url(../images/red/header-bottom.png);
+
+		&:before {
+			background-image: url(../images/red/header-bottom-repeat.png);
+		}
+	}
+
+	.header-bg-top {
+		background-image: url(../images/red/header-top.png);
+
+		&:before {
+			background-image: url(../images/red/header-top-repeat.png);
+		}
+	}
+}
+
 .no-responsive {
 	.content-bg-repeat {
 		width: 100%;
@@ -289,9 +401,12 @@ h6 {
 
 //-----------------------------------------------------------------------------------
 
-[class^="module"], [class*="module"] {
-	margin-bottom: 20px;
+.row, .row-fluid {
+	> [class^="module"], > [class*="module"] {
+		margin-bottom: 20px;
+	}
 }
+
 
 .module {
 	background-color: @white;

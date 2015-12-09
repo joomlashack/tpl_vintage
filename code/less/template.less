@@ -338,10 +338,10 @@ h6 {
 	&:after, &:before {
 		background-repeat: no-repeat;
 		content: '';
+		height: 45px;
 		position: absolute;
 		top: -5px;
 		width: 45px;
-		height: 45px;
 		z-index: 2;
 	}
 
@@ -365,12 +365,12 @@ h6 {
 	    position: relative;
 
 	    &:after, &:before {
-			z-index: 2;
 			background-repeat: no-repeat;
 			content: '';
+			height: 45px;
 			position: absolute;
 			width: 45px;
-			height: 45px;
+			z-index: 2;
 		}
 
 		&:before {
@@ -394,6 +394,59 @@ h6 {
 
 	> h3 {
 		margin-top: 0;
+	}
+}
+
+.module_ms4,
+.moduletable_ms4 {
+	.module;
+	position: relative;
+
+	&:before, &:after {
+		background-repeat: no-repeat;
+		content: '';
+		height: 47px;
+		position: absolute;
+		top: -15px;
+		width: 40px;
+		z-index: 2;
+	}
+
+	&:before {
+		background-image: url(../images/red/ms4_top_left.png);
+		left: -12px;
+	}
+
+	&:after {
+		background-image: url(../images/red/ms4_top_right.png);
+		right: -12px;
+	}
+
+	.module-inner {
+		background-color: #FFFEF1;
+	    border: 1px solid #F0EEDA;
+	    padding: 5px;
+		position: relative;
+
+		&:before, &:after {
+			background-repeat: no-repeat;
+			content: '';
+			height: 47px;
+			position: absolute;
+			bottom: -28px;
+			width: 40px;
+			z-index: 2;
+		}
+
+		&:before {
+			background-image: url(../images/red/ms4_bottom_left.png);
+			left: -20px;
+		}
+
+		&:after {
+			background-image: url(../images/red/ms4_bottom_right.png);
+			right: -24px;
+		}
 	}
 }
 

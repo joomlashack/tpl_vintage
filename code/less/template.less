@@ -241,6 +241,10 @@ h6 {
 
 //-----------------------------------------------------------------------------------
 
+[class^="module"], [class*="module"] {
+	margin-bottom: 20px;
+}
+
 .module {
 	background-color: @white;
 	border: 1px solid #d0cfc5;
@@ -924,6 +928,12 @@ div {
 	background-image: none;
 	filter: none;
 	color: @textColor;
+
+	@media (max-width: 768px) {
+		.module {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 

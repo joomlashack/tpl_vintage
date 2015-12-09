@@ -326,6 +326,77 @@ h6 {
 	}
 }
 
+
+.module_ms3,
+.moduletable_ms3 {
+	background-color: #BDB591;
+    box-shadow: 0 0 5px #B1B1B1;
+	padding: 20px;
+	position: relative;
+	.box-sizing(border-box);
+
+	&:after, &:before {
+		background-repeat: no-repeat;
+		content: '';
+		position: absolute;
+		top: -5px;
+		width: 45px;
+		height: 45px;
+		z-index: 2;
+	}
+
+	&:before {
+		background-image: url(../images/red/ms3_top_left.png);
+		left: -5px;
+	}
+
+	&:after {
+		background-image: url(../images/red/ms3_top_right.png);
+		right: -6px;
+		top: -6px;
+		height: 47px;
+		width: 47px;
+	}
+
+    .module-inner {
+    	background-color: #FFFEF1;
+	    border: 1px solid #A1925F;
+	    padding: 10px;
+	    position: relative;
+
+	    &:after, &:before {
+			z-index: 2;
+			background-repeat: no-repeat;
+			content: '';
+			position: absolute;
+			width: 45px;
+			height: 45px;
+		}
+
+		&:before {
+			background-image: url(../images/red/ms3_bottom_left.png);
+			left: -29px;
+			bottom: -35px;
+			width: 51px;
+			height: 59px;
+		}
+
+		&:after {
+			background-image: url(../images/red/ms3_bottom_right.png);
+			right: -24px;
+			bottom: -24px;
+		}
+
+		> h3 {
+			margin-top: 0;
+		}
+    }
+
+	> h3 {
+		margin-top: 0;
+	}
+}
+
 //-----------------------------------------------------------------------------------
 
 .wrapper-menu {

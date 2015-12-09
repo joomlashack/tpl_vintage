@@ -61,6 +61,55 @@
 	}
 }
 
+.no-responsive {
+	.content-bg-repeat {
+		width: 100%;
+	}
+
+	#menu .navbar-inverse {
+        .navbar-inner {
+            background-color: transparent;
+            background-image: none;
+        }
+    }
+
+    .navbar {
+        .nav {
+            > li {
+              &:first-child {
+                > a {
+                    padding-left: 0;
+                }
+              }
+
+              &:last-child {
+                > a {
+                    padding-right: 0;
+                }
+              }
+            }
+        }
+    }
+
+    .navbar-inverse {
+        .nav {
+            > li {
+                &:first-child {
+                    > a {
+                        padding-left: 15px;
+                    }
+                }
+
+                &:last-child {
+                    > a {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .content-wrapp {
 	.box-sizing(border-box);
 	padding: 0 32px;

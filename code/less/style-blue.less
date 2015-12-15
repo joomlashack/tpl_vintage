@@ -1,0 +1,104 @@
+body {
+    background: @bodyBackground url(../images/blue/page_bg.png) repeat-x center top;
+}
+
+// ----------------------------------------------------------------------------------
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+input:focus:required:invalid:focus,
+textarea:focus:required:invalid:focus,
+select:focus:required:invalid:focus{
+    border-color: @blue;
+    box-shadow:0 1px 1px @blue inset, 0 0 8px darken(@blue, 10%);
+}
+
+.navbar-inverse .navbar-inner {
+	border: 0;
+	padding: 0;
+
+	.nav {
+		> li {
+			border-right: 1px solid #416ca5;
+
+			> a {
+				border-right: 1px solid #273d67;
+			}
+		}
+	}
+}
+
+.wrapper-menu {
+	.navbar-inverse .navbar-inner {
+		.nav {
+			background-color: #263658;
+		}
+	}
+}
+
+.navbar-inverse .dropdown-menu,
+.dropdown-menu {
+	border: 0;
+}
+
+h1 {
+	color: #422c22;
+}
+
+h2 {
+	color: #365b90;
+}
+
+h3 {
+	color: #422c22;
+}
+
+h4 {
+	color: #243c65;
+}
+
+.module {
+	.module-inner {
+		> h3 {
+			color: #422c22;
+		}
+	}
+
+	> h3 {
+		color: #422c22;
+	}
+}
+
+.module_ms2,
+.moduletable_ms2 {
+	background-color: @white;
+
+	.module-inner {
+		> h3 {
+			background-color: #365B90;
+		}
+	}
+
+	> h3 {
+		background-color: #365B90;
+	}
+}
+
+
+
+
+

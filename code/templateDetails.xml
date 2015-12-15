@@ -82,7 +82,7 @@
 					<option value="0">JNO</option>
 				</field>
 				<field name="logo" type="logo" default="template" label="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_DESC" />
-				<field name="logowidth" type="grid" default="4" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
+				<field name="logowidth" type="grid" default="5" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
 				<field name="body_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_BODY_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_BODY_FONT_DESC" />
 				<field name="header_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_HEADING_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_HEADING_FONT_DESC" />
 				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="TPL_JS_WRIGHT_FIELD_COLUMNS_LABEL" description="TPL_JS_WRIGHT_FIELD_COLUMNS_DESC" />
@@ -118,6 +118,14 @@
 				</field>
 				<field name="browsercompatibility" label="TPL_JS_WRIGHT_BROWSER_COMPATIBILITY" description="TPL_JS_WRIGHT_BROWSER_COMPATIBILITY_DESC" type="browsercompatibility" />
                 <!-- End of default Wright params -->
+			</fieldset>
+			<fieldset name="TPL_JS_VINTAGE_OPTIONS">
+                <field name="enable_featured_module_button" type="radio" default="0" label="TPL_JS_VINTAGE_ENABLE_FEATURED_MODULE_BUTTON" description="TPL_JS_VINTAGE_ENABLE_FEATURED_MODULE_BUTTON_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="featured_text_button" type="text" default="Default" label="TPL_JS_VINTAGE_LABEL_FEATURED_BUTTON" description="TPL_JS_VINTAGE_LABEL_FEATURED_BUTTON_DESC" />
+
 			</fieldset>
 		</fields>
 	</config>

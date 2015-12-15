@@ -38,6 +38,9 @@ defined('_JEXEC') or die('Restricted access');
 				<div class="row-fluid">
 					<w:logo name="top" />
 				</div>
+				<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#featured">
+			      simple collapsible
+			    </button>
 			</header>
 			<div class="header-bg-bottom"></div>
 			<?php
@@ -54,9 +57,11 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('featured'))
 					:
 			?>
-			<div id="featured" class="module_ms3">
-				<div class="module-inner">
-					<w:module type="none" name="featured" chrome="xhtml" />
+			<div id="featured" class="collapse">
+				<div class="module_ms3">
+					<div class="module-inner">
+						<w:module type="none" name="featured" chrome="xhtml" />
+					</div>
 				</div>
 			</div>
 			<?php
@@ -98,10 +103,6 @@ defined('_JEXEC') or die('Restricted access');
 					<!-- main -->
 					<section id="main">
 						<?php
-							if ($this->countModules('above-content'))
-								:
-						?>
-						<?php
 							if ($this->countModules('breadcrumbs'))
 								:
 						?>
@@ -111,6 +112,10 @@ defined('_JEXEC') or die('Restricted access');
 						</div>
 						<?php
 							endif;
+						?>
+						<?php
+							if ($this->countModules('above-content'))
+								:
 						?>
 						<!-- above-content -->
 						<div id="above-content">

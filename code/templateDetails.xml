@@ -125,7 +125,6 @@
 					<option value="1">JYES</option>
 				</field>
 				<field name="featured_text_button" type="text" default="Default" label="TPL_JS_VINTAGE_LABEL_FEATURED_BUTTON" description="TPL_JS_VINTAGE_LABEL_FEATURED_BUTTON_DESC" />
-
 			</fieldset>
 		</fields>
 	</config>

@@ -38,9 +38,16 @@ defined('_JEXEC') or die('Restricted access');
 				<div class="row-fluid">
 					<w:logo name="top" />
 				</div>
+				<?php
+					if ($enable_featured_module_button)
+						:
+				?>
 				<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#featured">
-			      simple collapsible
+				     <?php echo $featured_text_button ?>
 			    </button>
+				<?php
+					endif;
+				?>
 			</header>
 			<div class="header-bg-bottom"></div>
 			<?php
@@ -57,7 +64,7 @@ defined('_JEXEC') or die('Restricted access');
 				if ($this->countModules('featured'))
 					:
 			?>
-			<div id="featured" class="collapse">
+			<div id="featured" class=" <?php echo ($enable_featured_module_button) ?  'collapse' : ' hola' ; ?>">
 				<div class="module_ms3">
 					<div class="module-inner">
 						<w:module type="none" name="featured" chrome="xhtml" />

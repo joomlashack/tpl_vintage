@@ -39,10 +39,10 @@ defined('_JEXEC') or die('Restricted access');
 					<w:logo name="top" />
 				</div>
 				<?php
-					if ($enable_featured_module_button)
+					if ($enable_featured_module_button && $this->countModules('featured'))
 						:
 				?>
-				<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#featured">
+				<button type="button" class="btn pull-right btn-featured-collapse" data-toggle="collapse" data-target="#featured">
 				     <?php echo $featured_text_button ?>
 			    </button>
 				<?php

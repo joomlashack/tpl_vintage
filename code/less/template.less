@@ -9,7 +9,7 @@
 		width: 900px;
 
 		@media (min-width: 768px) and (max-width: 979px) {
-		  width: 600px;
+		  width: 500px;
 		}
 
 		@media (max-width: 768px) {
@@ -239,6 +239,13 @@
 			background-image: url(../images/red/header-repeat.png);
 		}
 	}
+
+	.btn-featured-collapse {
+		bottom: -59px;
+		position: absolute;
+		right: 7%;
+		z-index: 2;
+	}
 }
 
 .header-bg-bottom {
@@ -257,6 +264,7 @@
 .header-bg-top {
 	height: 36px;
 	position: relative;
+	z-index: 3;
 	.content-bg-before-after;
 }
 
@@ -836,6 +844,21 @@ div.categories-list>div {
 		&:hover, &:focus {
 			.box-shadow(inset 0 0 200px @btnInverseBackground);
 		}
+	}
+}
+
+//-----------------------------------------------------------------------------------
+
+.btn.btn-featured-collapse {
+	.border-radius(0 0 5px 5px);
+	background-color: @white;
+	border-color: @white;
+	font-weight: bold;
+
+	&:hover, &:focus {
+		.box-shadow(inset 0 0 200px @white);
+		background-color: @white;
+		color: @color_one;
 	}
 }
 

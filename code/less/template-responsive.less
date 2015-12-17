@@ -49,6 +49,49 @@
     }
 }
 
+@media (min-width: 965px) and (max-width: 1185px) {
+    .navbar {
+        .nav {
+            > li {
+              &:first-child {
+                > a {
+                    padding-left: 0;
+                }
+              }
+
+              &:last-child {
+                > a {
+                    padding-right: 0;
+                }
+              }
+            }
+        }
+    }
+
+    .navbar-inverse .navbar-inner{
+        .nav {
+            > li {
+                > a {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                &:first-child {
+                    > a {
+                        padding-left: 10px;
+                    }
+                }
+
+                &:last-child {
+                    > a {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .content-bg-repeat {
         width: 1170px;

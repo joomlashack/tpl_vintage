@@ -1,10 +1,5 @@
-
-#footer h3 {
-    color: #E94E04;
-    height: 60px;
-    letter-spacing: normal;
-    line-height: 51px;
-    text-shadow: 1px -1px 1px #000000;
+body {
+    background: @bodyBackground url(../images/brown/page_bg.png) repeat-x center top;
 }
 
 // ----------------------------------------------------------------------------------
@@ -28,32 +23,90 @@ input[type="color"]:focus,
 input:focus:required:invalid:focus,
 textarea:focus:required:invalid:focus,
 select:focus:required:invalid:focus{
-    border-color: #F68A2B;
-    box-shadow:0 1px 1px #F3BB8D inset, 0 0 8px #F3BB8D;
+    border-color: @color_one;
+    box-shadow:0 1px 1px @color_one inset, 0 0 8px darken(@color_one, 10%);
 }
 
-// ----------------------------------------------------------------------------------
+.navbar-inverse .navbar-inner {
+    border: 0;
+    padding: 0;
 
-p.readmore .btn{
-  color: @orange;
-}
+    .nav {
+        > li {
+            border-right: 1px solid #806C44;
 
-// ----------------------------------------------------------------------------------
-
-#sliderNav .active a,
-#sliderNav a.active{
-	background-image: url("../images/orange/pagination.png");
-}
-
-body #sliderNav a{
-	background-image: url("../images/orange/pagination.png");
-}
-
-// ----------------------------------------------------------------------------------
-// Shackslides3
-
-div.jss-slider .jss-navigation .jss-navigation-dots .owl-dot {
-    > div {
-        background-image: url("../images/orange/pagination.png");
+            > a {
+                border-right: 1px solid #534327;
+            }
+        }
     }
 }
+
+.wrapper-menu {
+    .navbar-inverse .navbar-inner {
+        .nav {
+            background-color: #3d2f1a;
+        }
+    }
+}
+
+.navbar-inverse .dropdown-menu,
+.dropdown-menu {
+    border: 0;
+}
+
+h1 {
+    color: #660000;
+}
+h2 {
+    color: #623b27;
+}
+
+h3 {
+    color: #000;
+}
+
+h4 {
+    color: #352014;
+}
+
+.module {
+    .module-inner {
+        > h3 {
+            color: #660000;
+        }
+    }
+
+    > h3 {
+        color: #660000;
+    }
+}
+
+.module_ms2,
+.moduletable_ms2 {
+    .module-inner {
+        > h3 {
+            background-color: #600D07;
+        }
+    }
+
+    > h3 {
+        background-color: #600D07;
+    }
+}
+
+
+.wrapper-menu .navbar-inverse .navbar-inner .nav {
+    background-image: url("../images/brown/navcontainer-repeat.png");
+
+    &:after, &:before {
+        background-image: url("../images/brown/navcontainer.png");
+    }
+}
+
+.dropdown-menu {
+    background-image: url("../images/brown/menu_gradient.png");
+}
+
+
+

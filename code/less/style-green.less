@@ -1,10 +1,5 @@
-
-#footer h3 {
-    color: #85B519;
-    height: 60px;
-    letter-spacing: normal;
-    line-height: 51px;
-    text-shadow: 1px -1px 1px #000000;
+body {
+    background: @bodyBackground url(../images/green/page_bg.png) repeat-x center top;
 }
 
 // ----------------------------------------------------------------------------------
@@ -28,31 +23,72 @@ input[type="color"]:focus,
 input:focus:required:invalid:focus,
 textarea:focus:required:invalid:focus,
 select:focus:required:invalid:focus{
-    border-color: #B4C97A;
-    box-shadow:0 1px 1px #8EBF24 inset, 0 0 8px #8EBF24;
+    border-color: @green;
+    box-shadow:0 1px 1px @green inset, 0 0 8px darken(@green, 10%);
 }
 
-// ----------------------------------------------------------------------------------
+.navbar-inverse .navbar-inner {
+    border: 0;
+    padding: 0;
 
-p.readmore .btn{
-  color: #82AF0C;
-}
+    .nav {
+        > li {
+            border-right: 1px solid #436828;
 
-// ----------------------------------------------------------------------------------
-
-#sliderNav .active a,#sliderNav a.active{
-  background-image: url("../images/green/pagination.png");
-}
-
-body #sliderNav a{
-	background-image: url("../images/green/pagination.png");
-}
-
-// ----------------------------------------------------------------------------------
-// Shackslides3
-
-div.jss-slider .jss-navigation .jss-navigation-dots .owl-dot {
-    > div {
-        background-image: url("../images/green/pagination.png");
+            > a {
+                border-right: 1px solid #263c16;
+            }
+        }
     }
 }
+
+.wrapper-menu {
+    .navbar-inverse .navbar-inner {
+        .nav {
+            background-color: #263714;
+        }
+    }
+}
+
+.navbar-inverse .dropdown-menu,
+.dropdown-menu {
+    border: 0;
+}
+
+.module {
+    .module-inner {
+        > h3 {
+            color: #2d5919;
+        }
+    }
+
+    > h3 {
+        color: #2d5919;
+    }
+}
+
+.module_ms2,
+.moduletable_ms2 {
+    .module-inner {
+        > h3 {
+            background-color: #2A4F18;
+        }
+    }
+
+    > h3 {
+        background-color: #2A4F18;
+    }
+}
+
+h1 {
+    color: #2d5919;
+}
+
+h2 {
+    color: #623b27;
+}
+
+h4 {
+    color: #352014;
+}
+

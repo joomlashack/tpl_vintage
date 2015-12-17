@@ -29,27 +29,18 @@
 @navbarInverseDropdownLinkBackgroundHover : @dropdownLinkBackgroundHover;
 @navbarInverseDropdownLinkBackgroundActive : @dropdownLinkBackgroundActive;
 
-@color_one  : @white;  // body backgroundColor
-@color_two  : #2F4145; // Header top Gradient
+@color_one  : @green;  // body backgroundColor
+@color_two  : #E3DAA1; // Header top Gradient
 @color_three: #20282A; // Header bottom Gradient
-@color_four : #8dbb14; // Navbar top Gradient
-@color_five : #719c00; // Navbar bottom Gradient
+@color_four : #3c0905; // Navbar top Gradient
+@color_five : #7b160c; // Navbar bottom Gradient
 
-@selectionBackgroundColor:#D1DFAB;
+@selectionBackgroundColor:#DCAFAA;
 
 @tabsBackground      : @green;
 @tabsBackgroundHover : darken(@tabsBackground, 5%);
 
-@navbarLinkGradientTopHover     : #666;
-@navbarLinkGradientBottomHover  : #282828;
-@navbarLinkGradientTopActive    : #719C00;
-@navbarLinkGradientBottomActive : #8DBB14;
-
-@navbarLinkTextShadow       : #5E8300;
-@navbarLinkTextShadowHover  : #1A2407;
-@navbarLinkTextShadowActive : #5E8300;
-
-@folderTheme : 'green';
+@folderTheme : "green";
 
 
 // Global values
@@ -63,7 +54,7 @@
 @grayDark:              #333;
 @gray:                  #555;
 @grayLight:             #999;
-@grayLighter:           #eee;
+@grayLighter:           #F6F4E5;
 @white:                 #fff;
 
 
@@ -71,7 +62,7 @@
 // -------------------------
 @blue:                  #0D70D2;
 @blueDark:              #0064cd;
-@green:                 #5E8300;
+@green:                 #2d5919;
 @red:                   #9c0000;
 @yellow:                #ffc40d;
 @orange:                #E46C07;
@@ -81,14 +72,14 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @color_one;
-@textColor:             #575757;
+@bodyBackground:        #506D42;
+@textColor:             @black;
 
 
 // Links
 // -------------------------
 @linkColor:             @green;
-@linkColorHover:        #85B519;
+@linkColorHover:        #2d5919;
 
 
 // Typography
@@ -97,13 +88,13 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontSize:          13px;
+@baseFontFamily:        @serifFontFamily;
 @baseLineHeight:        20px;
-@altFontFamily:         @serifFontFamily;
+@altFontFamily:         @sansFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontWeight:    400;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -127,17 +118,17 @@
 // Tables
 // -------------------------
 @tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             #f5f5f5; // for striping
-@tableBackgroundHover:              #efefef; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBackgroundAccent:             darken(@grayLighter,2%); // for striping
+@tableBackgroundHover:              @grayLighter; // for hover
+@tableBorder:                       @hrBorder; // table and cell border
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #ccc;
+@btnBackground:                     transparent;
+@btnBackgroundHighlight:            transparent;
+@btnBorder:                         @hrBorder;
 
-@btnPrimaryBackground:              #669900;
+@btnPrimaryBackground:              @red;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;
@@ -159,17 +150,17 @@
 // Forms
 // -------------------------
 @inputBackground:               @white;
-@inputBorder:                   #ccc;
+@inputBorder:                   #ede9ca;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
-@formActionsBackground:         #f5f5f5;
+@formActionsBackground:         @grayLighter;
 @inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            fade(#20282a, 95%);
-@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownBackground:            #273f15;
+@dropdownBorder:                #263714;
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @gray;
 
@@ -177,8 +168,8 @@
 @dropdownLinkColorHover:        @white;
 @dropdownLinkColorActive:       @white;
 
-@dropdownLinkBackgroundActive:  #8ebf24;
-@dropdownLinkBackgroundHover:   #8ebf24;
+@dropdownLinkBackgroundActive:  @dropdownBorder;
+@dropdownLinkBackgroundHover:   @dropdownBorder;
 
 
 
@@ -211,7 +202,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+@hrBorder:                #dbcf85;
 
 
 // Horizontal forms & lists
@@ -221,7 +212,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #f5f5f5;
+@wellBackground:                  @grayLighter;
 
 
 // Navbar
@@ -230,30 +221,30 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       @color_four;
-@navbarBackground:                @color_five;
-@navbarBorder:                    darken(@navbarBackground, 12%);
+@navbarBackgroundHighlight:       #fffef1;
+@navbarBackground:                #fffef1;
+@navbarBorder:                    #fffef1;
 
-@navbarText:                      #777;
-@navbarLinkColor:                 @white;
-@navbarLinkColorHover:            #96cb24;
-@navbarLinkColorActive:           @white;
-@navbarLinkBackgroundHover:       @grayDark;
-@navbarLinkBackgroundActive:      @grayDark;
+@navbarText:                      @linkColor;
+@navbarLinkColor:                 @linkColor;
+@navbarLinkColorHover:            @linkColorHover;
+@navbarLinkColorActive:           @linkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      transparent;
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                #2f5f1a;
+@navbarInverseBackgroundHighlight:       #263714;
+@navbarInverseBorder:                    #2b160d;
 
-@navbarInverseText:                      @grayLight;
+@navbarInverseText:                      @white;
 @navbarInverseLinkColor:                 @white;
-@navbarInverseLinkColorHover:            #96CB24;
-@navbarInverseLinkColorActive:           @white;
-@navbarInverseLinkBackgroundHover:       @grayDark;
-@navbarInverseLinkBackgroundActive:      @grayDark;
+@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorActive:           @color_two;
+@navbarInverseLinkBackgroundHover:       #3d2518;
+@navbarInverseLinkBackgroundActive:      transparent;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
@@ -265,14 +256,14 @@
 
 // Pagination
 // -------------------------
-@paginationBackground:                #fff;
-@paginationBorder:                    #ddd;
-@paginationActiveBackground:          #f5f5f5;
+@paginationBackground:                @grayLighter;
+@paginationBorder:                    @hrBorder;
+@paginationActiveBackground:          transparent;
 
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              #B4C97A;
+@heroUnitBackground:              lighten(@color_one,4%);
 @heroUnitHeadingColor:            @white;
 @heroUnitLeadColor:               @black;
 

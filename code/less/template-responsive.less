@@ -30,7 +30,7 @@
         }
     }
 
-    .navbar-inverse {
+    div.navbar-inverse {
         .nav {
             > li {
                 &:first-child {
@@ -103,6 +103,24 @@
     .content-bg-repeat {
         width: 724px;
     }
+
+
+    .form-horizontal {
+        .control-label {
+            display: inline-block;
+            float: none;
+            width: auto;
+        }
+
+        .controls {
+            display: inline-block;
+            margin-left: 4px;
+
+            input {
+                width: auto;
+            }
+        }
+    }
 }
 
 /* Phones and tablets */
@@ -171,6 +189,10 @@
         .nav-collapse .dropdown-menu a:hover,
         .nav-collapse .dropdown-menu a:focus {
             background-color: darken(@color_four, 4%);
+        }
+
+        .nav-collapse .dropdown-menu .active > a {
+            color: @white;
         }
     }
 

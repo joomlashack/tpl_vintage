@@ -9,6 +9,7 @@
         .navbar-inner {
             background-color: transparent;
             background-image: none;
+            filter: none;
         }
     }
 
@@ -364,31 +365,6 @@
     }
 	.input-prepend,
     .input-append{
-        display: block;
-        textarea,
-        input[type="text"],
-        input[type="password"],
-        input[type="datetime"],
-        input[type="datetime-local"],
-        input[type="date"],
-        input[type="month"],
-        input[type="time"],
-        input[type="week"],
-        input[type="number"],
-        input[type="email"],
-        input[type="url"],
-        input[type="search"],
-        input[type="tel"],
-        input[type="color"],
-        .uneditable-input {
-            display: block;
-            margin-bottom: 10px;
-
-            &[class*="span"]{
-                display: block;
-                float: none;
-            }
-        }
         > * {
             margin-bottom: 10px;
         }
@@ -408,6 +384,7 @@
             }
         }
     }
+
     .form-search {
         .input-prepend,
         .input-append{
@@ -494,6 +471,14 @@
     }
     .navbar-form input, .navbar-form select, .navbar-form .btn {
     	margin-bottom: 10px;
+    }
+
+    .tabbable {
+        .nav-tabs {
+            > li > a {
+                border-color: transparent;
+            }
+        }
     }
 
     .content-bg-repeat {

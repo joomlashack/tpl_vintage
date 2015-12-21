@@ -1039,9 +1039,11 @@ p.img_caption {
 
 		&.active {
 			> a {
+				border-color: @color_one;
 				color: @white;
 
 				&:hover, &:focus{
+					border-color: @color_one;
 					color: @white;
 				}
 			}
@@ -1126,6 +1128,14 @@ p.img_caption {
  	}
 }
 
+.tabs-right > .nav-tabs .active > a, .tabs-right > .nav-tabs .active > a:hover, .tabs-right > .nav-tabs .active > a:focus {
+	border-color: @color_one @color_one @color_one transparent;
+}
+
+.tabs-right > .nav-tabs .active > a, .tabs-right > .nav-tabs .active > a:hover, .tabs-right > .nav-tabs .active > a:focus {
+	border-color: @color_one transparent @color_one @color_one;
+}
+
 //-----------------------------------------------------------------------------------
 
 div {
@@ -1145,8 +1155,9 @@ div {
 #footer {
 	background-color: transparent;
 	background-image: none;
-	filter: none;
 	color: @textColor;
+	filter: none;
+	overflow: visible;
 
 	@media (max-width: 768px) {
 		.module {

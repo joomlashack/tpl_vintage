@@ -10,5 +10,5 @@
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
 
-$enable_featured_module_button = ($this -> params -> get('enable_featured_module_button', '0') != '0' ? true : false);
+$enable_featured_module_button = ($this -> params -> get('enable_featured_module_button', '0') != '0' ? false : true);
 $featured_text_button = $this -> params -> get('featured_text_button', 'Featured');

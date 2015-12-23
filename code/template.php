@@ -176,16 +176,6 @@ defined('_JEXEC') or die('Restricted access');
 				<!-- footer -->
 				<div class="wrapper-footer">
 					<footer id="footer">
-						<?php
-						if ($this->countModules('bottom-menu'))
-						:
-						?>
-						<!-- bottom-menu -->
-						<w:nav type="menu" wrapClass="row-fluid dropup" name="bottom-menu" />
-						<?php
-						endif;
-						?>
-
 						<div class="footer-content">
 					   		<?php
 								if ($this->countModules('footer'))
@@ -196,6 +186,15 @@ defined('_JEXEC') or die('Restricted access');
 								endif;
 							?>
 						</div>
+						<?php
+						if ($this->countModules('bottom-menu'))
+						:
+						?>
+						<!-- bottom-menu -->
+						<w:nav type="menu" wrapClass="row-fluid dropup" name="bottom-menu" />
+						<?php
+						endif;
+						?>
 				   </footer>
 				</div>
 			</div>

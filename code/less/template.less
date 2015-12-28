@@ -422,15 +422,14 @@ h6 {
 
 //-----------------------------------------------------------------------------------
 
-.row, .row-fluid {
-	> [class^="module"], > [class*="module"] {
-		margin-bottom: 20px;
-	}
+[class^="module"], [class*="module"] {
+	margin-bottom: 20px;
 }
 
 
-.module {
+.module ,  .moduletable {
 	background-color: @white;
+	border-radius: 5px 5px 0 0;
 	border: 1px solid #d0cfc5;
 	padding: 10px;
 	.box-shadow(0 0 5px @grayLight);
@@ -438,14 +437,26 @@ h6 {
 
 	.module-inner {
 		> h3 {
+			background-color: #EBE8D4;
 			color: #a10000;
-			margin-top: 0;
+			border-radius: 5px 5px 0 0;
+			font-size: @baseFontSize + 3;
+			margin-left: -10px;
+			margin-right: -10px;
+			margin-top: -10px;
+			padding: 10px;
 		}
 	}
 
 	> h3 {
+		background-color: #EBE8D4;
 		color: #a10000;
-		margin-top: 0;
+		border-radius: 5px 5px 0 0;
+		font-size: @baseFontSize + 3;
+		margin-left: -10px;
+		margin-right: -10px;
+		margin-top: -12px;
+		padding: 10px;
 	}
 }
 
@@ -453,7 +464,7 @@ h6 {
 .moduletable_ms1 {
 	background-color: #FFFFF1;
 	border-radius: 5px 5px 0 0;
-	padding: 0 10px 10px;
+	padding: 10px;
 	.box-shadow(0 0 5px @grayLight);
 	.box-sizing(border-box);
 
@@ -465,7 +476,7 @@ h6 {
 			font-size: @baseFontSize + 3;
 			margin-left: -10px;
 			margin-right: -10px;
-			margin-top: 0;
+			margin-top: -10px;
 			padding: 10px;
 		}
 	}
@@ -477,7 +488,7 @@ h6 {
 		font-size: @baseFontSize + 3;
 		margin-left: -10px;
 		margin-right: -10px;
-		margin-top: 0;
+		margin-top: -10px;
 		padding: 10px;
 	}
 }
@@ -486,7 +497,7 @@ h6 {
 .moduletable_ms2 {
 	background-color: #EBE8D4;
 	border-radius: 5px 5px 0 0;
-	padding: 0 10px 10px;
+	padding: 10px;
 	.box-shadow(0 0 5px @grayLight);
 	.box-sizing(border-box);
 
@@ -510,7 +521,7 @@ h6 {
 		font-size: @baseFontSize + 3;
 		margin-left: -10px;
 		margin-right: -10px;
-		margin-top: 0;
+		margin-top: -10px;
 		padding: 10px;
 	}
 }
@@ -644,6 +655,7 @@ h6 {
 	.module {
 		background-color: transparent;
 		border: 0;
+		margin: 0;
 		padding: 0;
 		.box-shadow(none);
 	}

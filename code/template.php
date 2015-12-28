@@ -67,7 +67,7 @@ defined('_JEXEC') or die('Restricted access');
 			<div id="featured" class=" <?php echo ($enable_featured_module_button) ?  'collapse' : ' hola' ; ?>">
 				<div class="module_ms3">
 					<div class="module-inner">
-						<w:module type="none" name="featured" chrome="xhtml" />
+						<w:module type="row-fluid" name="featured" chrome="wrightflexgrid" extradivs="module"/>
 					</div>
 				</div>
 			</div>

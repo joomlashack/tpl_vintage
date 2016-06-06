@@ -10,5 +10,12 @@
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
 
-$enable_featured_module_button = ($this -> params -> get('enable_featured_module_button', '0') != '0' ? false : true);
-$featured_text_button = $this -> params -> get('featured_text_button', 'Featured');
+$bg_image                       = $this -> params -> get('bg_image');
+if( $bg_image ) {
+    JFactory::getDocument()->addStyleDeclaration(
+        '#header {background-image: url(' . JURI::base() . $bg_image . ');}'
+    );
+}
+
+$enable_featured_module_button  = ($this -> params -> get('enable_featured_module_button', '0') != '0' ? false : true);
+$featured_text_button           = $this -> params -> get('featured_text_button', 'Featured');

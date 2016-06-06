@@ -32,9 +32,7 @@ defined('_JEXEC') or die('Restricted access');
 		?>
 		<div class="<?php echo $wrightContainerClass; ?>">
 			<!-- header -->
-			<div class="header-bg-top"></div>
 			<header id="header" class="content-wrapp">
-				<div class="content-bg-repeat"></div>
 				<div class="row-fluid">
 					<w:logo name="top" />
 				</div>
@@ -49,7 +47,6 @@ defined('_JEXEC') or die('Restricted access');
 					endif;
 				?>
 			</header>
-			<div class="header-bg-bottom"></div>
 			<?php
 				if ($this->countModules('menu'))
 					:
@@ -77,9 +74,7 @@ defined('_JEXEC') or die('Restricted access');
 
 		</div>
 		<div class="<?php echo $wrightContainerClass; ?>">
-			<div class="content-bg-top"></div>
 			<div class="content-wrapp">
-				<div class="content-bg-repeat"></div>
 				<!-- grid-top -->
 				<?php
 					if ($this->countModules('grid-top'))
@@ -198,7 +193,6 @@ defined('_JEXEC') or die('Restricted access');
 				   </footer>
 				</div>
 			</div>
-			<div class="content-bg-bottom"></div>
 			<w:footer />
 		</div>
 	</body>

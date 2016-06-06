@@ -34,7 +34,7 @@ defined('_JEXEC') or die('Restricted access');
 			<!-- header -->
 			<header id="header" class="content-wrapp">
 				<div class="row-fluid">
-					<w:logo name="top" />
+                    <w:logo name="top" />
 				</div>
 				<?php
 					if ($enable_featured_module_button && $this->countModules('featured'))
@@ -101,49 +101,55 @@ defined('_JEXEC') or die('Restricted access');
                     <div id="main-content" class="row-fluid">
                         <!-- sidebar1 -->
                         <aside id="sidebar1">
-                            <w:module name="sidebar1" chrome="xhtml" />
+                            <div class="padding-size">
+                                <w:module name="sidebar1" chrome="xhtml" />
+                            </div>
                         </aside>
                         <!-- main -->
                         <section id="main">
-                            <?php
-                                if ($this->countModules('breadcrumbs'))
-                                    :
-                            ?>
-                            <!-- breadcrumbs -->
-                            <div id="breadcrumbs">
-                                <w:module type="none" name="breadcrumbs" chrome="xhtml" />
+                            <div class="padding-size">
+                                <?php
+                                    if ($this->countModules('breadcrumbs'))
+                                        :
+                                ?>
+                                <!-- breadcrumbs -->
+                                <div id="breadcrumbs">
+                                    <w:module type="none" name="breadcrumbs" chrome="xhtml" />
+                                </div>
+                                <?php
+                                    endif;
+                                ?>
+                                <?php
+                                    if ($this->countModules('above-content'))
+                                        :
+                                ?>
+                                <!-- above-content -->
+                                <div id="above-content">
+                                    <w:module type="none" name="above-content" chrome="xhtml" />
+                                </div>
+                                <?php
+                                    endif;
+                                ?>
+                                <!-- component -->
+                                <w:content />
+                                <?php
+                                    if ($this->countModules('below-content'))
+                                        :
+                                ?>
+                                <!-- below-content -->
+                                <div id="below-content">
+                                    <w:module type="none" name="below-content" chrome="xhtml" />
+                                </div>
+                                <?php
+                                    endif;
+                                ?>
                             </div>
-                            <?php
-                                endif;
-                            ?>
-                            <?php
-                                if ($this->countModules('above-content'))
-                                    :
-                            ?>
-                            <!-- above-content -->
-                            <div id="above-content">
-                                <w:module type="none" name="above-content" chrome="xhtml" />
-                            </div>
-                            <?php
-                                endif;
-                            ?>
-                            <!-- component -->
-                            <w:content />
-                            <?php
-                                if ($this->countModules('below-content'))
-                                    :
-                            ?>
-                            <!-- below-content -->
-                            <div id="below-content">
-                                <w:module type="none" name="below-content" chrome="xhtml" />
-                            </div>
-                            <?php
-                                endif;
-                            ?>
                         </section>
                         <!-- sidebar2 -->
                         <aside id="sidebar2">
-                            <w:module name="sidebar2" chrome="xhtml" />
+                            <div class="padding-size">
+                                <w:module name="sidebar2" chrome="xhtml" />
+                            </div>
                         </aside>
                     </div>
                 </div>
@@ -154,7 +160,9 @@ defined('_JEXEC') or die('Restricted access');
                     ?>
                     <!-- grid-bottom -->
                     <div id="grid-bottom" >
+                        <div class="padding-size">
                             <w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" extradivs="module" />
+                        </div>
                     </div>
                     <?php
                         endif;
@@ -165,7 +173,9 @@ defined('_JEXEC') or die('Restricted access');
                     ?>
                     <!-- grid-bottom2 -->
                     <div id="grid-bottom2" >
+                        <div class="padding-size">
                             <w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" extradivs="module" />
+                        </div>
                     </div>
                     <?php
                         endif;
@@ -175,25 +185,27 @@ defined('_JEXEC') or die('Restricted access');
                     <!-- footer -->
                     <div class="wrapper-footer">
                         <footer id="footer">
-                            <div class="footer-content">
+                            <div class="padding-size">
+                                <div class="footer-content">
+                                    <?php
+                                        if ($this->countModules('footer'))
+                                        :
+                                    ?>
+                                        <w:module type="row-fluid" name="footer" chrome="wrightflexgrid" extradivs="module" />
+                                    <?php
+                                        endif;
+                                    ?>
+                                </div>
                                 <?php
-                                    if ($this->countModules('footer'))
-                                    :
+                                if ($this->countModules('bottom-menu'))
+                                :
                                 ?>
-                                    <w:module type="row-fluid" name="footer" chrome="wrightflexgrid" extradivs="module" />
+                                <!-- bottom-menu -->
+                                <w:nav type="menu" wrapClass="row-fluid dropup" name="bottom-menu" />
                                 <?php
-                                    endif;
+                                endif;
                                 ?>
                             </div>
-                            <?php
-                            if ($this->countModules('bottom-menu'))
-                            :
-                            ?>
-                            <!-- bottom-menu -->
-                            <w:nav type="menu" wrapClass="row-fluid dropup" name="bottom-menu" />
-                            <?php
-                            endif;
-                            ?>
                        </footer>
                     </div>
                 </div>

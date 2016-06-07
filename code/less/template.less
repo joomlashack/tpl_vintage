@@ -5,6 +5,7 @@ body {
   	font-family: 'Josefin Sans', sans-serif;
   	font-size: 16px;
   	line-height: 22px;
+  	background-size: auto 50%;
 }
 
 #logo {
@@ -202,6 +203,14 @@ body {
   	margin-bottom: 0;
 }
 
+#breadcrumbs {
+  	[class*="custom"] {
+		background-position: center;
+		background-size: 100% auto;
+	  	.border-radius(6px 6px 0 0);
+	}
+}
+
 .jssocialicons.jssocialicons-horizontal {
 	> li {
 		float: none;
@@ -261,6 +270,35 @@ h5,
 h6 {
   	font-weight: 700;
   	color: @color_three;
+}
+
+h1.featured-text {
+	line-height: unset;
+	margin: 0;
+	padding: 140px 32px;
+	color: #fff;
+	.big-text {
+		line-height: 70px;
+		font-size: 109px;
+	}
+	.medium-text-light {
+		font-weight: 300;
+		font-size: 33px;
+		line-height: 33px;
+	}
+	.medium-text {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.btn {
+		margin-top: 20px;
+		text-transform: none;
+		&.btn-large {
+			font-size: 28px;
+			line-height: 28px;
+			padding: 15px 50px;
+		}
+	}
 }
 
 //-----------------------------------------------------------------------------------
@@ -354,8 +392,12 @@ h6 {
 	}
 }
 
-.readmore .icon-chevron-right {
-  	display: none;
+p.readmore {
+	display: inline;
+	float: none;
+	.icon-chevron-right {
+	  	display: none;
+	}
 }
 
 //-----------------------------------------------------------------------------------
@@ -421,6 +463,18 @@ h6 {
 	}
 }
 
+//-----------------------------------------------------------------------------------
+
+#featured {
+	&.in.collapse {
+	  	margin-bottom: 20px;
+	}
+  	.border-radius(6px);
+  	background: #fffef1;
+	.padding-size {
+	  	padding: 32px;
+	}
+}
 
 #sidebar1,
 #sidebar2 {
@@ -436,6 +490,10 @@ h6 {
 
 #sidebar2 {
   	.border-radius(0 6px 0);
+}
+
+#grid-bottom {
+	background: #e3daa1;
 }
 
 #grid-bottom,

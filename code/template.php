@@ -62,11 +62,13 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<div id="featured" class=" <?php echo ($enable_featured_module_button) ?  'collapse' : ' hola' ; ?>">
-				<div class="module_ms3">
-					<div class="module-inner">
-						<w:module type="row-fluid" name="featured" chrome="wrightflexgrid" extradivs="module"/>
-					</div>
-				</div>
+                <div class="padding-size">
+                    <div class="module_ms3">
+                        <div class="module-inner">
+                            <w:module type="row-fluid" name="featured" chrome="wrightflexgrid" extradivs="module"/>
+                        </div>
+                    </div>
+                </div>
 			</div>
 			<?php
 				endif;
@@ -107,43 +109,43 @@ defined('_JEXEC') or die('Restricted access');
                         </aside>
                         <!-- main -->
                         <section id="main">
-                            <div class="padding-size">
-                                <?php
-                                    if ($this->countModules('breadcrumbs'))
-                                        :
-                                ?>
-                                <!-- breadcrumbs -->
-                                <div id="breadcrumbs">
-                                    <w:module type="none" name="breadcrumbs" chrome="xhtml" />
-                                </div>
-                                <?php
-                                    endif;
-                                ?>
-                                <?php
-                                    if ($this->countModules('above-content'))
-                                        :
-                                ?>
-                                <!-- above-content -->
-                                <div id="above-content">
-                                    <w:module type="none" name="above-content" chrome="xhtml" />
-                                </div>
-                                <?php
-                                    endif;
-                                ?>
-                                <!-- component -->
-                                <w:content />
-                                <?php
-                                    if ($this->countModules('below-content'))
-                                        :
-                                ?>
-                                <!-- below-content -->
-                                <div id="below-content">
-                                    <w:module type="none" name="below-content" chrome="xhtml" />
-                                </div>
-                                <?php
-                                    endif;
-                                ?>
+                            <?php
+                                if ($this->countModules('breadcrumbs'))
+                                    :
+                            ?>
+                            <!-- breadcrumbs -->
+                            <div id="breadcrumbs">
+                                <w:module type="none" name="breadcrumbs" chrome="xhtml" />
                             </div>
+                            <?php
+                                endif;
+                            ?>
+                            <?php
+                                if ($this->countModules('above-content'))
+                                    :
+                            ?>
+                            <!-- above-content -->
+                            <div id="above-content">
+                                <w:module type="none" name="above-content" chrome="xhtml" />
+                            </div>
+                            <?php
+                                endif;
+                            ?>
+                            <!-- component -->
+                            <div class="padding-size">
+                                <w:content />
+                            </div>
+                            <?php
+                                if ($this->countModules('below-content'))
+                                    :
+                            ?>
+                            <!-- below-content -->
+                            <div id="below-content">
+                                <w:module type="none" name="below-content" chrome="xhtml" />
+                            </div>
+                            <?php
+                                endif;
+                            ?>
                         </section>
                         <!-- sidebar2 -->
                         <aside id="sidebar2">

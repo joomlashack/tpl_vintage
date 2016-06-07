@@ -10,6 +10,7 @@ switch ($template_style ) :
         include_once 'templates/old.php';
         break;
 
+    // New design
     case 'red-new':
         include_once 'templates/new.php';
         break;

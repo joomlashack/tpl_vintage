@@ -121,7 +121,6 @@
                 <!-- End of default Wright params -->
 			</fieldset>
 			<fieldset name="TPL_JS_VINTAGE_OPTIONS">
-                <field name="bg_image" type="media" label="TPL_JS_VINTAGE_BG_IMAGE" description="TPL_JS_VINTAGE_BG_IMAGE_DESC" />
                 <field name="enable_featured_module_button" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_VINTAGE_ENABLE_FEATURED_MODULE_BUTTON" description="TPL_JS_VINTAGE_ENABLE_FEATURED_MODULE_BUTTON_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>

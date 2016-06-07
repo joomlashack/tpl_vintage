@@ -33,7 +33,8 @@
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
-		<folder>less</folder>
+        <folder>less</folder>
+        <folder>templates</folder>
 		<folder>wright</folder>
 	</files>
 

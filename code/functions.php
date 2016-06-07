@@ -19,3 +19,4 @@ if( $bg_image ) {
 
 $enable_featured_module_button  = ($this -> params -> get('enable_featured_module_button', '0') != '0' ? false : true);
 $featured_text_button           = $this -> params -> get('featured_text_button', 'Featured');
+$template_style                 = $this -> params -> get('style', 'red');

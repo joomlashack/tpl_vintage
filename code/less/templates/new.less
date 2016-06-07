@@ -236,10 +236,6 @@ blockquote {
   	.breadcrumb {
 	  	margin: 32px 32px 0;
 	}
-  	[class*="custom"] {
-		background-position: center;
-		background-size: cover;
-	}
 }
 
 .jssocialicons.jssocialicons-horizontal {
@@ -250,6 +246,11 @@ blockquote {
   	li:last-of-type > a {
 		margin-right: 0;
 	}
+}
+
+[class*="custom"] {
+	background-position: center;
+  	background-size: cover;
 }
 
 //-----------------------------------------------------------------------------------
@@ -641,20 +642,18 @@ div.categories-list>div {
 //-----------------------------------------------------------------------------------
 
 .our-services {
-  	background: @grayDark;
+  	background: rgba(0, 0, 0, 0.7);
   	[class^="span"] {
 	  	margin-top: 40px;
 	}
-  	[class^="icon-"]:before,
 	* {
-	  	color: @color_six;
+	  	color: @white;
 	}
 	h4 {
 	  	margin-bottom: 40px;
 	  	padding: 0;
 	}
   	a {
-	  	.transition(all .4s ease-in);
 	  	&:hover,
 	  	&:focus {
 		  	text-decoration: none;

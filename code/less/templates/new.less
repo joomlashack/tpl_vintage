@@ -18,6 +18,10 @@ body {
   	line-height: 22px;
 }
 
+a {
+  	.transition(all .4s ease-in);
+}
+
 blockquote {
 	font-size: 22px;
 	line-height: 28px;
@@ -637,7 +641,34 @@ div.categories-list>div {
 
 //-----------------------------------------------------------------------------------
 
-.btn {
+.our-services {
+  	background: @grayDark;
+  	[class^="span"] {
+	  	margin-top: 40px;
+	}
+  	[class^="icon-"]:before,
+	* {
+	  	color: @color_six;
+	}
+	h4 {
+	  	margin-bottom: 40px;
+	  	padding: 0;
+	}
+  	a {
+	  	.transition(all .4s ease-in);
+	  	&:hover,
+	  	&:focus {
+		  	text-decoration: none;
+		  	color: @white;
+		}
+	}
+}
+
+//-----------------------------------------------------------------------------------
+
+.btn,
+.pager li > a,
+.pager li > span {
   	font-family: 'Lobster', cursive;
   	font-size: 15px;
   	line-height: 26px;

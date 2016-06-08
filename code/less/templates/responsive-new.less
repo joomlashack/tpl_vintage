@@ -131,9 +131,21 @@
 /* Phones and tablets */
 @media (max-width: 979px) {
 
+	#menu .navbar #nav-menu > ul > li {
+	  	border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+		> a {
+		  	.border-radius(0);
+		}
+	  	&:last-of-type {
+		  	border-bottom: none;
+		}
+	}
+
     .wrapper-menu {
         .navbar-inverse {
             .navbar-inner {
+			  	background: @color_one;
+			  	.border-radius(0 0 6px 6px);
                 .nav {
                     background-color: transparent;
                     background-image: none;
@@ -176,9 +188,13 @@
             }
 
             .btn-navbar {
-                background-color: @navbarInverseBackground;
+                background-color: @white;
                 background-image: none;
                 filter: none;
+				.icon-bar {
+				  	background: @color_one;
+				  	.box-shadow(none);
+				}
             }
         }
 
@@ -280,9 +296,14 @@
 @media (max-width: 767px) {
 
 	#logo {
+	  	text-align: center;
 	  	img {
 			max-width: 220px;
 	  	}
+	}
+
+	ul.jssocialicons {
+	  	text-align: center;
 	}
 
 	.wrapper-content{

@@ -84,7 +84,9 @@ defined('_JEXEC') or die('Restricted access');
                             :
                     ?>
                     <div id="grid-top">
-                        <w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module"/>
+                        <div class="padding-size">
+                            <w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module"/>
+                        </div>
                     </div>
                     <?php
                         endif;
@@ -95,7 +97,9 @@ defined('_JEXEC') or die('Restricted access');
                     ?>
                     <!-- grid-top2 -->
                     <div id="grid-top2">
-                        <w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module"/>
+                        <div class="padding-size">
+                            <w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module"/>
+                        </div>
                     </div>
                     <?php
                         endif;

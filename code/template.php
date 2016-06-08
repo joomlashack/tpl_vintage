@@ -12,6 +12,7 @@ switch ($template_style ) :
 
     // New design
     case 'red-new':
+    case 'blue-new':
         include_once 'templates/new.php';
         break;
 

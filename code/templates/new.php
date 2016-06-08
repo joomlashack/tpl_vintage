@@ -61,12 +61,10 @@ defined('_JEXEC') or die('Restricted access');
 					:
 			?>
 			<!-- featured -->
-			<div id="featured" class=" <?php echo ($enable_featured_module_button) ?  'collapse' : ' hola' ; ?>">
-				<div class="padding-size">
-					<div class="module_ms3">
-						<div class="module-inner">
-							<w:module type="row-fluid" name="featured" chrome="wrightflexgrid" extradivs="module"/>
-						</div>
+			<div id="featured" class=" <?php echo ($enable_featured_module_button) ?  'collapse' : ' '; ?> padding-size">
+				<div class="module_ms3">
+					<div class="module-inner">
+						<w:module type="row-fluid" name="featured" chrome="wrightflexgrid" extradivs="module"/>
 					</div>
 				</div>
 			</div>
@@ -82,10 +80,8 @@ defined('_JEXEC') or die('Restricted access');
 						:
 					?>
 					<!-- grid-top -->
-					<div id="grid-top">
-						<div class="padding-size">
-							<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module"/>
-						</div>
+					<div id="grid-top" class="padding-size">
+						<w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module"/>
 					</div>
 					<?php
 						endif;
@@ -95,10 +91,8 @@ defined('_JEXEC') or die('Restricted access');
 							:
 					?>
 					<!-- grid-top2 -->
-					<div id="grid-top2">
-						<div class="padding-size">
-							<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module"/>
-						</div>
+					<div id="grid-top2" class="padding-size">
+						<w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module"/>
 					</div>
 					<?php
 						endif;
@@ -117,7 +111,7 @@ defined('_JEXEC') or die('Restricted access');
 									:
 							?>
 							<!-- breadcrumbs -->
-							<div id="breadcrumbs">
+							<div id="breadcrumbs" class="padding-size">
 								<w:module type="none" name="breadcrumbs" chrome="xhtml" />
 							</div>
 							<?php
@@ -128,10 +122,8 @@ defined('_JEXEC') or die('Restricted access');
 									:
 							?>
 							<!-- above-content -->
-							<div id="above-content">
-								<div class="padding-size">
-									<w:module type="none" name="above-content" chrome="xhtml" />
-								</div>
+							<div id="above-content" class="padding-size">
+								<w:module type="none" name="above-content" chrome="xhtml" />
 							</div>
 							<?php
 								endif;
@@ -145,10 +137,8 @@ defined('_JEXEC') or die('Restricted access');
 									:
 							?>
 							<!-- below-content -->
-							<div id="below-content">
-								<div class="padding-size">
-									<w:module type="none" name="below-content" chrome="xhtml" />
-								</div>
+							<div id="below-content" class="padding-size">
+								<w:module type="none" name="below-content" chrome="xhtml" />
 							</div>
 							<?php
 								endif;
@@ -168,10 +158,8 @@ defined('_JEXEC') or die('Restricted access');
 							:
 					?>
 					<!-- grid-bottom -->
-					<div id="grid-bottom" >
-						<div class="padding-size">
-							<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" extradivs="module" />
-						</div>
+					<div id="grid-bottom" class="padding-size">
+						<w:module type="row-fluid" name="grid-bottom" chrome="wrightflexgrid" extradivs="module" />
 					</div>
 					<?php
 						endif;
@@ -181,10 +169,8 @@ defined('_JEXEC') or die('Restricted access');
 							:
 					?>
 					<!-- grid-bottom2 -->
-					<div id="grid-bottom2" >
-						<div class="padding-size">
-							<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" extradivs="module" />
-						</div>
+					<div id="grid-bottom2" class="padding-size">
+						<w:module type="row-fluid" name="grid-bottom2" chrome="wrightflexgrid" extradivs="module" />
 					</div>
 					<?php
 						endif;
@@ -193,28 +179,26 @@ defined('_JEXEC') or die('Restricted access');
 				<div class="content-wrapp-footer">
 					<!-- footer -->
 					<div class="wrapper-footer">
-						<footer id="footer">
-							<div class="padding-size">
-								<div class="footer-content">
-									<?php
-										if ($this->countModules('footer'))
-											:
-									?>
-									<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" extradivs="module" />
-									<?php
-										endif;
-									?>
-								</div>
+						<footer id="footer" class="padding-size">
+							<div class="footer-content">
 								<?php
-									if ($this->countModules('bottom-menu'))
+									if ($this->countModules('footer'))
 										:
 								?>
-								<!-- bottom-menu -->
-								<w:nav type="menu" wrapClass="row-fluid dropup" name="bottom-menu" />
+								<w:module type="row-fluid" name="footer" chrome="wrightflexgrid" extradivs="module" />
 								<?php
 									endif;
 								?>
 							</div>
+							<?php
+								if ($this->countModules('bottom-menu'))
+									:
+							?>
+							<!-- bottom-menu -->
+							<w:nav type="menu" wrapClass="row-fluid dropup" name="bottom-menu" />
+							<?php
+								endif;
+							?>
 						</footer>
 					</div>
 				</div>

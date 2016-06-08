@@ -190,9 +190,6 @@ blockquote {
 }
 
 #main {
-	.padding-size {
-	  padding: 32px;
-	}
 	.item-image img {
 		background-color: #fff;
 		border: 1px solid #d0cfc5;
@@ -202,11 +199,15 @@ blockquote {
 	}
 }
 
+.padding-size {
+	padding: 32px;
+}
+
 #grid-top,
 #grid-top2 {
-  	.padding-size {
+	&.padding-size {
 		padding: 32px 32px 0;
-  	}
+	}
 }
 
 #header {
@@ -514,17 +515,11 @@ p.readmore {
 	}
   	.border-radius(6px);
   	background: #fffef1;
-	.padding-size {
-	  	padding: 32px;
-	}
 }
 
 #sidebar1,
 #sidebar2 {
   	background: @white;
-	.padding-size {
-	  	padding: 32px;
-	}
 }
 
 #sidebar1 {
@@ -602,26 +597,13 @@ p.readmore {
 	}
 }
 
-#grid-bottom,
-#grid-bottom2 {
-  	.padding-size {
-	  	padding: 32px;
-	}
-}
-
-#footer {
-  .padding-size {
-	padding: 32px;
-  }
-}
-
 #above-content {
-  	.padding-size {
+  	&.padding-size {
 		padding: 32px 32px 0;
   	}
 }
 #below-content {
-  	.padding-size {
+  	&.padding-size {
 		padding: 0 32px 32px 32px;
   	}
 }
@@ -1194,6 +1176,3 @@ body .element-invisible {
 		}
 	}
 }
-
-
-

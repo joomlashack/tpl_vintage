@@ -14,7 +14,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
-switch ($template_style ) :
+switch ($template_style) :
 
     // Old design
     default:

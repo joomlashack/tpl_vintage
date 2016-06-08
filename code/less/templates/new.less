@@ -515,10 +515,71 @@ p.readmore {
 
 #sidebar1 {
   	.border-radius(6px 0 0);
+	.padding-size {
+	  	border-right: 1px dashed @color_six;
+	  	border-bottom: 1px dashed @color_six;
+	}
 }
 
 #sidebar2 {
   	.border-radius(0 6px 0);
+	.padding-size {
+	  	border-bottom: 1px dashed @color_six;
+	  	border-right: 1px dashed @color_six;
+	}
+}
+
+#main + #sidebar1 {
+  	.padding-size {
+		border-left: 1px dashed @color_six;
+  	}
+}
+
+#sidebar2 + #sidebar1 {
+  	.padding-size {
+	  	border-right: 1px dashed @color_six;
+	  	border-left: 1px dashed @color_six;
+  	}
+}
+
+#sidebar1 + #sidebar2 {
+	.padding-size {
+	  	border-left: 1px dashed @color_six;
+	}
+}
+
+#main + #sidebar2 + #sidebar1 {
+	.padding-size {
+	  	border-left: 1px dashed @color_six;
+	  	border-right: none;
+	}
+}
+
+#main + #sidebar2 {
+  	.padding-size {
+	  	border-right: 1px dashed @color_six;
+	  	border-left: 1px dashed @color_six;
+  	}
+}
+
+#sidebar1 + #main + #sidebar2 {
+  	.padding-size {
+		border-right: none;
+	  	border-left: 1px dashed @color_six;
+  	}
+}
+
+#sidebar2 + #main + #sidebar1 {
+  	.padding-size {
+		border-right: none;
+		border-left: 1px dashed @color_six;
+  	}
+}
+
+#main + #sidebar1 + #sidebar2 {
+  	.padding-size {
+		border-right: none;
+  	}
 }
 
 #grid-bottom,

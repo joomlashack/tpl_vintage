@@ -111,7 +111,7 @@ defined('_JEXEC') or die('Restricted access');
 									:
 							?>
 							<!-- breadcrumbs -->
-							<div id="breadcrumbs" class="padding-size">
+							<div id="breadcrumbs">
 								<w:module type="none" name="breadcrumbs" chrome="xhtml" />
 							</div>
 							<?php

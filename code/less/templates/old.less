@@ -229,6 +229,45 @@
   position: relative;
 }
 
+.featured-text {
+	color: @white;
+  	padding: 70px 32px;
+  	font-size: 42px;
+  	line-height: 46px;
+  	margin: 0;
+	.btn {
+	  	margin-top: 20px;
+	  	background: rgba(0,0,0,0.2);
+	  	color: @white;
+	}
+}
+
+.our-services {
+	background: rgba(0, 0, 0, 0.7);
+	[class^="span"] {
+	  	margin-top: 40px;
+	}
+	* {
+	  	color: @white;
+	}
+	h4 {
+	  	margin-bottom: 40px;
+	  	padding: 0;
+	}
+	a {
+	  	&:hover,
+	  	&:focus {
+			text-decoration: none;
+			color: @white;
+	  }
+	}
+}
+
+.jssocialicons.jssocialicons-horizontal > li {
+  	float: none;
+  	display: inline-block;
+}
+
 #menu {
   margin-bottom: 0;
 
@@ -247,6 +286,14 @@
 	&:before , &:after {
 	  background-image: url(../images/red/header-repeat.png);
 	}
+  }
+
+  .module,
+  .moduletable {
+		background: none;
+		border: none;
+		.box-shadow(none);
+		padding: 0;
   }
 
   .btn-featured-collapse {
@@ -442,6 +489,11 @@ h6 {
   padding: 10px;
   .box-shadow(0 0 5px @grayLight);
   .box-sizing(border-box);
+
+  [class*="custom"] {
+		background-position: top center;
+		background-size: cover;
+  }
 
   .module-inner {
 	> h3 {

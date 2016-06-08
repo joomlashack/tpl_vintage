@@ -432,11 +432,24 @@ h1.featured-text {
 }
 
 p.readmore {
-	display: inline;
+	display: inline-block;
 	float: none;
+  	margin-bottom: 20px;
 	.icon-chevron-right {
 	  	display: none;
 	}
+}
+
+.muted {
+  	color: @gray;
+}
+
+.pagination {
+  	margin: 20px 0;
+  	font-family: 'Lobster', cursive;
+  	.counter.pull-right {
+		margin-left: 20px;
+  	}
 }
 
 //-----------------------------------------------------------------------------------

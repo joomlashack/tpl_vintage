@@ -10,14 +10,26 @@
 // Restrict Access to within Joomla
 defined('_JEXEC') or die('Restricted access');
 
+$user							= JFactory::getUser();
 $enable_featured_module_button  = ($this -> params -> get('enable_featured_module_button', '0') != '0' ? false : true);
 $featured_text_button           = $this -> params -> get('featured_text_button', 'Featured');
+$template_style					= 'old';
+$theme_style					= ($this->params->get('style', 'red-new'));
 
-// Check if there is ?templateTheme=something exists in the URL
-$template_preview = JFactory::getApplication()->input->get('templateTheme', null, 'string');
+if (strpos($theme_style, '-new'))
+{
+	$template_style = 'new';
+}
 
-if($template_preview) :
-    $template_style = $template_preview;
-else:
-    $template_style = $this -> params -> get('style', 'red-new');
-endif;
+if (!is_null(JRequest::getVar('templateTheme', NULL)))
+{
+	$theme_style = JRequest::getVar('templateTheme');
+
+	if (strpos($theme_style, '-new'))
+	{
+		$template_style = 'new';
+	}
+	else {
+		$template_style = 'old';
+	}
+}

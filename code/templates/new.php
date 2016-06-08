@@ -130,7 +130,9 @@ defined('_JEXEC') or die('Restricted access');
                             ?>
                             <!-- above-content -->
                             <div id="above-content">
-                                <w:module type="none" name="above-content" chrome="xhtml" />
+                                <div class="padding-size">
+                                    <w:module type="none" name="above-content" chrome="xhtml" />
+                                </div>
                             </div>
                             <?php
                                 endif;
@@ -145,7 +147,9 @@ defined('_JEXEC') or die('Restricted access');
                             ?>
                             <!-- below-content -->
                             <div id="below-content">
-                                <w:module type="none" name="below-content" chrome="xhtml" />
+                                <div class="padding-size">
+                                    <w:module type="none" name="below-content" chrome="xhtml" />
+                                </div>
                             </div>
                             <?php
                                 endif;

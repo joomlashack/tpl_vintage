@@ -263,9 +263,12 @@
 	}
 }
 
-.jssocialicons.jssocialicons-horizontal > li {
-  	float: none;
-  	display: inline-block;
+.jssocialicons.jssocialicons-horizontal {
+	margin-left: 0;
+	> li {
+	  	float: none;
+	  	display: inline-block;
+	}
 }
 
 #menu {
@@ -288,12 +291,20 @@
 	}
   }
 
+  #top,
+  #top2 {
+		padding-top: 0;
+  }
+
   .module,
   .moduletable {
 		background: none;
 		border: none;
 		.box-shadow(none);
 		padding: 0;
+		&:last-of-type {
+		  	margin-bottom: 0;
+		}
   }
 
   .btn-featured-collapse {

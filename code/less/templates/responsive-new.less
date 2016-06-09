@@ -139,13 +139,18 @@
 		> li {
 		  	display: inherit;
 		  	float: inherit;
-			a {
+			> a {
 				background: rgba(0, 0, 0, 0.03);
 				text-shadow: none;
+			  	padding: 10px 15px;
 				&:hover,
 				&:focus {
 				  	background: rgba(0,0,0,0.1);
 				}
+			}
+		  	+ li a:before {
+			  	margin: 0;
+			  	content: '';
 			}
 		}
 	}

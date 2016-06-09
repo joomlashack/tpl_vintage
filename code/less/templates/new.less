@@ -338,6 +338,14 @@ body.no-rebrand {
 	> li {
 	  	display: inline-block;
 	  	float: none;
+	  	+ li > a:before {
+		  	content: '\2014';
+		  	color: @grayDark;
+		  	margin-right: 10px;
+		}
+	  	a {
+		  	padding: 10px 5px;
+		}
 	}
 }
 

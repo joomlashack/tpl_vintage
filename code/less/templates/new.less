@@ -167,7 +167,7 @@ blockquote {
 		margin-bottom: 0;
 		#nav-menu > ul > li {
 			> a {
-			  font-size: 15px;
+			  font-size: 16px;
 			  text-shadow: none;
 			}
 			> .dropdown-menu {
@@ -190,13 +190,15 @@ blockquote {
 }
 
 #main {
-	.item-image img {
-		background-color: #fff;
-		border: 1px solid #d0cfc5;
-		.box-shadow(2px 2px 0 rgba(0, 0, 0, 0.05));
-		padding: 4px 4px 14px;
-	  	max-width: 240px;
+  	.item-image img {
+		max-width: 240px;
+		&.img-polaroid {
+		  border: 1px solid #d0cfc5;
+		  .box-shadow(2px 2px 0 rgba(0, 0, 0, 0.05));
+		  padding: 4px 4px 14px;
+		}
 	}
+
 }
 
 .padding-size {

@@ -131,6 +131,30 @@
 /* Phones and tablets */
 @media (max-width: 979px) {
 
+	h1.featured-text {
+		padding: 100px 32px;
+		.big-text {
+			line-height: 55px;
+			font-size: 65px;
+		}
+		.medium-text-light {
+			font-weight: 400;
+			font-size: 22px;
+			line-height: 22px;
+		}
+		.medium-text {
+			font-size: 22px;
+			line-height: 22px;
+		}
+		.btn {
+			&.btn-large {
+				font-size: 20px;
+				line-height: 20px;
+				padding: 12px 30px;
+			}
+		}
+	}
+
 	#menu .navbar #nav-menu > ul > li {
 	  	border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
 		> a {
@@ -526,4 +550,14 @@
             right: 85px;
         }
     }
+}
+
+@media (max-width: 480px) {
+	h1.featured-text {
+		padding: 60px 32px;
+		.big-text {
+		  	line-height: 40px;
+		  	font-size: 45px;
+		}
+	}
 }

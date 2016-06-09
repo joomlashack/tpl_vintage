@@ -250,7 +250,7 @@ blockquote {
   	margin: 0;
 	.btn {
 	  	margin-top: 20px;
-	  	background: rgba(0,0,0,0.2);
+	  	background: rgba(0,0,0,0.4);
 	  	color: @white;
 	}
 }
@@ -298,6 +298,16 @@ blockquote {
 }
 
 #header {
+  form {
+	  margin-bottom: 0;
+	  .element-invisible {
+			display: none;
+	  }
+  }
+  [class^="module"],
+  [class*="module"] {
+		margin-bottom: 0;
+  }
   .content-bg-repeat {
 	&:before , &:after {
 	  background-image: url(../images/red/header-repeat.png);
@@ -870,6 +880,7 @@ h6 {
 .breadcrumb {
   background-color: transparent;
   padding: 0;
+  margin: 0;
 
   > li {text-shadow: none;}
 }

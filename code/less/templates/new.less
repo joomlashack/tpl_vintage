@@ -18,6 +18,10 @@ body {
 
 a {
   	.transition(all .4s ease-in);
+	&:hover,
+	&:focus {
+	  	text-decoration: none;
+	}
 }
 
 textarea, input[type="text"],
@@ -240,7 +244,9 @@ body.no-rebrand {
 		  padding: 4px 4px 14px;
 		}
 	}
-
+	.padding-size > [class*="blog"] {
+	  	padding-top: 20px;
+	}
 }
 
 .padding-size {

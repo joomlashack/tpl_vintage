@@ -131,6 +131,23 @@
 /* Phones and tablets */
 @media (max-width: 979px) {
 
+	#bottom-menu {
+		.navbar-inner {
+			background: none;
+			border: none;
+			padding: 0 15px;
+			#nav-bottom-menu .nav {
+			  float: inherit;
+			  margin-right: inherit;
+			  text-align: inherit;
+			  > li {
+				  display: inherit;
+				  float: inherit;
+			  }
+			}
+		}
+	}
+
     .wrapper-menu {
         .navbar-inverse {
             .navbar-inner {
@@ -511,7 +528,7 @@
 
     #header {
         .btn-featured-collapse {
-            right: 85px;
+            right: 110px;
         }
     }
 }

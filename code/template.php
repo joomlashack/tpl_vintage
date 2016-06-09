@@ -84,7 +84,7 @@ endif;
             :
             ?>
             <!-- grid-top -->
-            <div id="grid-top">
+            <div id="grid-top" class="padding-size">
                 <w:module type="row-fluid" name="grid-top" chrome="wrightflexgrid" extradivs="module"/>
             </div>
         <?php
@@ -95,7 +95,7 @@ endif;
             :
             ?>
             <!-- grid-top2 -->
-            <div id="grid-top2">
+            <div id="grid-top2" class="padding-size">
                 <w:module type="row-fluid" name="grid-top2" chrome="wrightflexgrid" extradivs="module"/>
             </div>
         <?php
@@ -104,7 +104,9 @@ endif;
         <div id="main-content" class="row-fluid">
             <!-- sidebar1 -->
             <aside id="sidebar1">
-                <w:module name="sidebar1" chrome="xhtml" />
+                <div class="padding-size">
+                    <w:module name="sidebar1" chrome="xhtml" />
+                </div>
             </aside>
             <!-- main -->
             <section id="main">

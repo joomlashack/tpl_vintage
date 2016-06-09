@@ -319,6 +319,24 @@
 /* Phones */
 @media (max-width: 767px) {
 
+	#sidebar1,
+	#sidebar2 {
+	  	.padding-size {
+			border-right: none !important;
+			border-left: none !important;
+		  	border-top: 1px dashed @color_six;
+		  	border-bottom: 1px dashed @color_six;
+	  	}
+	}
+
+	#sidebar2 > .padding-size {
+	  	border-bottom: none;
+	}
+
+	#grid-top2 + #main-content > #sidebar1 > .padding-size {
+	  	border-top: none;
+	}
+
 	.text-center-small {
 	  	text-align: center;
 	}

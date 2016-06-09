@@ -499,6 +499,29 @@ h6 {
   }
 }
 
+p.readmore {
+	display: inline-block;
+	float: none;
+	margin-bottom: 20px;
+	a {
+	  	padding: 0;
+	  	border: none;
+	  	color: @color_one;
+	  	font-weight: bold;
+	  	text-shadow: none;
+	  	background: none;
+		&:hover,
+		&:focus {
+		  	background: none;
+		  	text-shadow: none;
+		  	.box-shadow(none);
+		}
+		.icon-chevron-right {
+		  	display: none;
+		}
+	}
+
+}
 
 //-----------------------------------------------------------------------------------
 
@@ -516,9 +539,9 @@ h6 {
 }
 
 
-.module ,  .moduletable {
+.module,  .moduletable {
   background-color: @white;
-  border-radius: 5px 5px 0 0;
+  .border-radius(5px 5px 0 0);
   border: 1px solid #d0cfc5;
   padding: 10px;
   .box-shadow(0 0 5px @grayLight);
@@ -578,6 +601,31 @@ h6 {
   }
 }
 
+#breadcrumbs,
+#above-content,
+#below-content,
+#top,
+#featured {
+	.module,
+  	.moduletable {
+	  	background: none;
+	  	.box-shadow(none);
+	  	padding: 0;
+		border: none;
+	  	h3 {
+			background: none;
+			border: none;
+		  	margin: 0 0 5px;
+		  	padding: 5px 0;
+		  	font-size: @baseFontSize + 7;
+	  	}
+  	}
+}
+
+#below-content {
+	margin-bottom: 30px;
+}
+
 .module_ms1,
 .moduletable_ms1 {
   background-color: #FFFFF1;
@@ -627,7 +675,7 @@ h6 {
 	  font-size: @baseFontSize + 3;
 	  margin-left: -10px;
 	  margin-right: -10px;
-	  margin-top: 0;
+	  margin-top: -10px;
 	  padding: 10px;
 	}
   }
@@ -681,6 +729,9 @@ h6 {
 	border: 1px solid #A1925F;
 	padding: 10px;
 	position: relative;
+	> h3 {
+	  	font-size: @baseFontSize + 3;
+	}
 
 	&:after, &:before {
 	  background-repeat: no-repeat;
@@ -707,6 +758,7 @@ h6 {
 
 	> h3 {
 	  margin-top: 0;
+	  font-size: @baseFontSize + 3;
 	}
   }
 
@@ -743,8 +795,15 @@ h6 {
   > .module-inner {
 	background-color: #FFFEF1;
 	border: 1px solid #F0EEDA;
-	padding: 5px;
+	padding: 10px;
 	position: relative;
+
+	> h3 {
+	  	background: none;
+	  	.border-radius(0);
+	  	margin: 0 0 10px;
+	  	padding: 0;
+	}
 
 	&:before, &:after {
 	  background-repeat: no-repeat;
@@ -780,6 +839,10 @@ h6 {
 }
 
 //-----------------------------------------------------------------------------------
+
+.page-header {
+	margin: 20px 0;
+}
 
 .item-page {
   overflow: visible;
@@ -880,7 +943,7 @@ h6 {
 .breadcrumb {
   background-color: transparent;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
 
   > li {text-shadow: none;}
 }

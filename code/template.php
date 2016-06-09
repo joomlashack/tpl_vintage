@@ -204,6 +204,7 @@ endif;
     </div>
     <div class="content-bg-bottom"></div>
     <w:footer />
+    <w:module type="none" name="debug" chrome="none" />
 </div>
 </body>
 </html>

@@ -131,6 +131,25 @@
 /* Phones and tablets */
 @media (max-width: 979px) {
 
+	.navbar-inner #nav-bottom-menu .nav {
+		float: inherit;
+	  	margin-right: inherit;
+	  	text-align: inherit;
+	  	margin-top: 10px;
+		> li {
+		  	display: inherit;
+		  	float: inherit;
+			a {
+				background: rgba(0, 0, 0, 0.03);
+				text-shadow: none;
+				&:hover,
+				&:focus {
+				  	background: rgba(0,0,0,0.1);
+				}
+			}
+		}
+	}
+
 	h1.featured-text {
 		padding: 100px 32px;
 		.big-text {

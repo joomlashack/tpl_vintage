@@ -176,6 +176,10 @@ a.joomlashack {
     }
 }
 
+#mod-search-searchword {
+	max-width: 165px;
+}
+
 .content-wrapp {
   	background: #fffef1;
 	.box-sizing(border-box);
@@ -870,7 +874,8 @@ div.categories-list>div {
 		border-color: @btnPrimaryBackground;
 
 		&:hover, &:focus {
-			.box-shadow(inset 0 0 200px @btnPrimaryBackground);
+			background: @linkColorHover;
+		  	.box-shadow(none);
 		}
 	}
 

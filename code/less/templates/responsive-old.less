@@ -143,13 +143,22 @@
 			border: none;
 			padding: 0 15px;
 			#nav-bottom-menu .nav {
-			  float: inherit;
-			  margin-right: inherit;
-			  text-align: inherit;
-			  > li {
-				  display: inherit;
-				  float: inherit;
-			  }
+				float: inherit;
+				margin-right: inherit;
+				text-align: inherit;
+				> li {
+					display: inherit;
+				  	float: inherit;
+					a,
+					&:first-child a {
+						border-bottom: 1px dashed;
+					  	.border-radius(0);
+					  	padding: 9px 15px;
+					}
+				  	&:last-child a {
+					  	border-bottom: none;
+					}
+			  	}
 			}
 		}
 	}

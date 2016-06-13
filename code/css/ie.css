@@ -1,0 +1,23 @@
+.explorer.v_8 .content-bg-repeat {
+  width: 940px;
+}
+.explorer.v_8 #menu .navbar-inverse .navbar-inner {
+  background-color: transparent;
+  background-image: none;
+  filter: none;
+}
+.explorer.v_8 #menu .navbar-inverse .nav {
+  padding-right: 115px;
+}
+.explorer.v_8 .navbar .nav > li:first-child > a {
+  padding-left: 0;
+}
+.explorer.v_8 .navbar .nav > li:last-child > a {
+  padding-right: 0;
+}
+.explorer.v_8 div.navbar-inverse .nav > li:first-child > a {
+  padding-left: 15px;
+}
+.explorer.v_8 div.navbar-inverse .nav > li:last-child > a {
+  padding-right: 15px;
+}

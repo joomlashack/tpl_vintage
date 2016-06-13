@@ -1414,9 +1414,14 @@ div {
   }
 }
 
-body .element-invisible {
-  display: block;
-  visibility: hidden;
+body {
+	> .container {
+	  	max-width: 960px;
+	}
+	.element-invisible {
+	  	display: block;
+	  	visibility: hidden;
+	}
 }
 
 //-----------------------------------------------------------------------------------

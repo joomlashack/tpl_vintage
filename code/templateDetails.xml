@@ -5,7 +5,7 @@
 	<creationDate>June 2016</creationDate>
 	<author>Joomlashack</author>
 	<authorEmail>support@joomlashack.com</authorEmail>
-	<authorUrl>http://www.joomlashack.com</authorUrl>
+	<authorUrl>https://www.joomlashack.com</authorUrl>
 	<copyright>Copyright Joomlashack 2005 - 2016. All rights reserved</copyright>
 	<license>GNU GPLv2</license>
 	<version>4.0.0</version>
@@ -34,7 +34,6 @@
 		<folder>images</folder>
 		<folder>js</folder>
         <folder>less</folder>
-        <folder>templates</folder>
 		<folder>wright</folder>
 	</files>
 

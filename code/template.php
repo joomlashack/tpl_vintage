@@ -107,7 +107,7 @@ endif;
             <!-- sidebar1 -->
             <aside id="sidebar1">
                 <div class="padding-size">
-                    <w:module name="sidebar1" chrome="xhtml" />
+                    <w:module name="sidebar1" chrome="wrightxhtml" extradivs="module" />
                 </div>
             </aside>
             <!-- main -->
@@ -118,7 +118,7 @@ endif;
                     ?>
                     <!-- breadcrumbs -->
                     <div id="breadcrumbs">
-                        <w:module type="none" name="breadcrumbs" chrome="xhtml" />
+                        <w:module type="none" name="breadcrumbs" chrome="wrightxhtml" />
                     </div>
                 <?php
                 endif;
@@ -129,7 +129,7 @@ endif;
                     ?>
                     <!-- above-content -->
                     <div id="above-content" class="padding-size">
-                        <w:module type="none" name="above-content" chrome="xhtml" />
+                        <w:module type="none" name="above-content" chrome="wrightxhtml" />
                     </div>
                 <?php
                 endif;
@@ -144,7 +144,7 @@ endif;
                     ?>
                     <!-- below-content -->
                     <div id="below-content" class="padding-size">
-                        <w:module type="none" name="below-content" chrome="xhtml" />
+                        <w:module type="none" name="below-content" chrome="wrightxhtml" />
                     </div>
                 <?php
                 endif;
@@ -153,7 +153,7 @@ endif;
             <!-- sidebar2 -->
             <aside id="sidebar2">
                 <div class="padding-size">
-                    <w:module name="sidebar2" chrome="xhtml" />
+                    <w:module name="sidebar2" chrome="wrightxhtml" extradivs="module" />
                 </div>
             </aside>
         </div>

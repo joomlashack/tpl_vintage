@@ -118,7 +118,7 @@ endif;
                     ?>
                     <!-- breadcrumbs -->
                     <div id="breadcrumbs">
-                        <w:module type="none" name="breadcrumbs" chrome="wrightxhtml" />
+                        <w:module name="breadcrumbs" extradivs="module" />
                     </div>
                 <?php
                 endif;
@@ -129,7 +129,7 @@ endif;
                     ?>
                     <!-- above-content -->
                     <div id="above-content" class="padding-size">
-                        <w:module type="none" name="above-content" chrome="wrightxhtml" />
+                        <w:module name="above-content" extradivs="module" />
                     </div>
                 <?php
                 endif;
@@ -144,7 +144,7 @@ endif;
                     ?>
                     <!-- below-content -->
                     <div id="below-content" class="padding-size">
-                        <w:module type="none" name="below-content" chrome="wrightxhtml" />
+                        <w:module name="below-content" estradivs="module" />
                     </div>
                 <?php
                 endif;

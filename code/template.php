@@ -144,7 +144,7 @@ endif;
                     ?>
                     <!-- below-content -->
                     <div id="below-content" class="padding-size">
-                        <w:module name="below-content" estradivs="module" />
+                        <w:module name="below-content" extradivs="module" />
                     </div>
                 <?php
                 endif;

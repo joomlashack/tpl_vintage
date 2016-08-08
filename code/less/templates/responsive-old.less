@@ -1,3 +1,94 @@
+.backgrounds-in-small-screens {
+	background: none !important;
+
+	&:before,
+	&:after {
+		background-repeat: repeat-y;
+		background-color: transparent;
+		max-width: 100%;
+	}
+
+	&:before {
+		background-position: left top;
+		left: 0;
+	}
+
+	&:after {
+		background-position: right top;
+		right: 0;
+	}
+}
+
+@media (max-width: 1008px) {
+
+	.container-fluid {
+
+		.header-bg-top,
+		.header-bg-bottom,
+		.content-bg-top,
+		.content-bg-bottom,
+		#header .content-bg-repeat,
+		#header .content-bg-repeat,
+		.content-wrapp .content-bg-repeat,
+		.content-wrapp .content-bg-repeat {
+
+			.backgrounds-in-small-screens;
+		}
+
+		.header-bg-top {
+
+			&:before,
+			&:after {
+				background-image: url(../images/red/header-top.png);
+			}
+		}
+
+		.header-bg-bottom {
+
+			&:before,
+			&:after {
+				background-image: url(../images/red/header-bottom.png);
+			}
+		}
+
+		#header .content-bg-repeat {
+
+			&:before,
+			&:after {
+				background-image: url(../images/red/header-repeat.png);
+			}
+		}
+
+		.content-wrapp .content-bg-repeat {
+
+			&:before,
+			&:after {
+				background-image: url(../images/red/bg-repeat.png);
+			}
+		}
+
+		.content-bg-top {
+
+			&:before,
+			&:after {
+				background-image: url(../images/red/bg-top.png);
+			}
+		}
+
+		.content-bg-bottom {
+
+			&:before,
+			&:after {
+				background-image: url(../images/red/bg-bottom.png);
+			}
+		}
+
+		#menu .navbar-inner {
+			.border-radius(0 0 8px 8px);
+		}
+	}
+}
+
 @media (min-width: 940px) {
   	.content-bg-repeat {
 		width: 940px;

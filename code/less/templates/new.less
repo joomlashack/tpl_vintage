@@ -205,21 +205,30 @@ body.no-rebrand {
 
 	.navbar {
 		margin-bottom: 0;
+
 		#nav-menu > ul > li {
+
 			> a {
 			  font-size: 15px;
 			  text-shadow: none;
 			}
+
 			> .dropdown-menu {
 			  	.border-radius(0 0 6px 6px)
 			}
 		}
+
 		.nav {
 			margin-right: 0;
 			.dropdown-toggle .caret {
 			  	margin-left: 4px;
 			  	margin-top: 10px;
 			}
+		}
+
+		.btn-navbar {
+			color: @color_one;
+			text-shadow: none;
 		}
 	}
 }
@@ -345,6 +354,9 @@ body.no-rebrand {
 
 #bottom-menu .btn-navbar {
 	background-color: @color_one;
+	color: @white;
+	text-shadow: none;
+
 	.icon-bar{
 	  	background: @white;
 	}

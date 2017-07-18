@@ -55,6 +55,7 @@
 		<position>bottom-menu</position>
         <position>footer</position>
 		<position>debug</position>
+        <position>toolbar</position>
 	</positions>
 
 	<config>

@@ -116,11 +116,6 @@
                 <field name="mobilemenuspacer" label="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_label" description="TPL_JS_WRIGHT_MOBILE_MENU_TITLE_DESC" type="spacer" />
                 <field name="mobile_menu_text" type="text" default="" label="TPL_JS_WRIGHT_MOBILE_MENU_TEXT" description="TPL_JS_WRIGHT_MOBILE_MENU_TEXT_DESC" />
 				<!-- End of default Wright params -->
-			                
-                <field
-                    type="customfooter"
-                    name="customfooter"
-                    media="tpl_js_vintage" />
             </fieldset>
 			<fieldset name="TPL_JS_VINTAGE_OPTIONS">
                 <field name="enable_featured_module_button" type="radio" class="btn-group btn-group-yesno" default="0" label="TPL_JS_VINTAGE_ENABLE_FEATURED_MODULE_BUTTON" description="TPL_JS_VINTAGE_ENABLE_FEATURED_MODULE_BUTTON_DESC">
@@ -129,6 +124,12 @@
 				</field>
 				<field name="featured_text_button" type="text" default="Default" label="TPL_JS_VINTAGE_LABEL_FEATURED_BUTTON" description="TPL_JS_VINTAGE_LABEL_FEATURED_BUTTON_DESC" />
 			</fieldset>
+			<fieldset name="footer" addfieldpath="/templates/js_vintage/form/fields">     
+                <field
+                    type="customfooter"
+                    name="customfooter"
+                    media="tpl_js_vintage" />
+            </fieldset>
 		</fields>
 	</config>
 

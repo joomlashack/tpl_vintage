@@ -41,7 +41,7 @@
 
 @selectionBackgroundColor:#DCAFAA;
 
-@tabsBackground      : @red;
+@tabsBackground      : @color_one;
 @tabsBackgroundHover : darken(@tabsBackground, 5%);
 
 @folderTheme : "red";
@@ -82,8 +82,8 @@
 
 // Links
 // -------------------------
-@linkColor:             @red;
-@linkColorHover:        #bb1015;
+@linkColor:             @color_one;
+@linkColorHover:        lighten(desaturate(spin(@color_one, 358.2456), 15.7635), 9.2157);
 
 
 // Typography
@@ -132,7 +132,7 @@
 @btnBackgroundHighlight:            transparent;
 @btnBorder:                         @hrBorder;
 
-@btnPrimaryBackground:              @red;
+@btnPrimaryBackground:              @color_one;
 @btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
 
 @btnInfoBackground:                 #5bc0de;

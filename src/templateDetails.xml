@@ -82,8 +82,8 @@
 				<field name="color_six" type="color" default="#e3daa1" class="wCustomColor" label="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_SIX_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_COLOR_SIX_DESC" showon="style:custom[AND]styleVariation:modern" />
 				<field name="compileCss" type="compilecss" showon="style:custom"/>
 				<field name="modal" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MODAL_DESC">
-				    <option value="1">JYES</option>
-				    <option value="0">JNO</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
 				</field>
 				<field name="javascriptBottom" type="radio" class="btn-group btn-group-yesno" default="1" label="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM" description="TPL_JS_WRIGHT_FIELD_JAVASCRIPT_BOTTOM_DESC">
 					<option value="1">JYES</option>

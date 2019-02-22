@@ -20,8 +20,8 @@
 	</languages>
 
 	<files>
-        <filename>component.php</filename>
-        <filename>render.php</filename>
+		<filename>component.php</filename>
+		<filename>render.php</filename>
 		<filename>favicon.ico</filename>
 		<filename>functions.php</filename>
 		<filename>index.php</filename>

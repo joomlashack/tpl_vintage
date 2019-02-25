@@ -38,7 +38,7 @@
 @color_three: #20282A; // Header bottom Gradient
 @color_four : #3c0905; // Navbar top Gradient
 @color_five : #7b160c; // Navbar bottom Gradient
-@color_six  : #e3daa1; // Extra
+@color_six  : @color_two; // Extra
 
 @selectionBackgroundColor:#DCAFAA;
 
@@ -84,7 +84,7 @@
 // Links
 // -------------------------
 @linkColor:             @color_one;
-@linkColorHover:        #ba1419;
+@linkColorHover:        lighten(desaturate(spin(@color_one, 358.1928), 19.4175), 9.8039);
 
 
 // Typography
@@ -164,8 +164,8 @@
 
 // Dropdowns
 // -------------------------
-@dropdownBackground:            #ba1419;
-@dropdownBorder:                #5b0302;
+@dropdownBackground:            @linkColorHover;
+@dropdownBorder:                darken(desaturate(spin(@color_one, 0.6742), 4.3011), 12.3529);
 @dropdownDividerTop:            #e5e5e5;
 @dropdownDividerBottom:         @gray;
 
@@ -207,7 +207,7 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                #dbcf85;
+@hrBorder:               darken(saturate(spin(@color_two, -0.1903), 0.3320), 7.0588);
 
 
 // Horizontal forms & lists
@@ -226,9 +226,9 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #fffef1;
-@navbarBackground:                #fffef1;
-@navbarBorder:                    #fffef1;
+@navbarBackgroundHighlight:       lighten(saturate(spin(@color_six, 3.8961), 45.9016), 21.1765);
+@navbarBackground:                lighten(saturate(spin(@color_six, 3.8961), 45.9016), 21.1765);
+@navbarBorder:                    lighten(saturate(spin(@color_six, 3.8961), 45.9016), 21.1765);
 
 @navbarText:                      @linkColor;
 @navbarLinkColor:                 @linkColor;
@@ -240,8 +240,8 @@
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #7b160c;
-@navbarInverseBackgroundHighlight:       #3c0905;
+@navbarInverseBackground:                @color_five;
+@navbarInverseBackgroundHighlight:       @color_four;
 @navbarInverseBorder:                    #2b160d;
 
 @navbarInverseText:                      @white;

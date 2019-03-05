@@ -20,10 +20,7 @@ $document = JFactory::getDocument();
 $lessCustomizationVars = array (
     '@color_one'    => $document->params->get('color_one', '#9c0000'),
     '@color_two'    => $document->params->get('color_two', '#E3DAA1'),
-    '@color_three'  => $document->params->get('color_three', '#20282A'),
-    '@color_four'   => $document->params->get('color_four', '#3c0905'),
-    '@color_five'   => $document->params->get('color_five', '#7b160c'),
-    '@color_six'    => $document->params->get('color_six', '#e3daa1')
+    '@color_three'  => $document->params->get('color_three', '#20282A')
 );
 
 // Check the selected variation style to choose between 'red-new' (default style) or 'red'

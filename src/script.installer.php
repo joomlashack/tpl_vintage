@@ -1,8 +1,8 @@
 <?php
 /**
  * @package   tpl_vintage
- * @contact   www.joomlashack.com, help@joomlashack.com
- * @copyright 2016 Open Source Training, LLC. All rights reserved
+ * @copyright Copyright (C) 2005 - 2020 Joomlashack. All rights reserved.
+ * @license   GNU General Public License version 2 or later; see LICENSE.txt
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
  */
 
